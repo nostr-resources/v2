@@ -132,3 +132,184 @@ einer bestimmten Person zu suchen. Finde deine X/Twitter-Freunde mit dieser Such
 [#asknostr](https://nosey.vercel.app/?q=%23asknostr) Hashtag in einem Note von einem beliebigen Client.
 
 ---
+
+# Mehr erfahren
+
+Das Design von nostr ist sehr einfach:
+
+- Es gibt zwei Komponenten: **Clients** und **Relays**. Jeder Nutzer verwendet einen Client. Jeder kann ein Relay betreiben.
+- Jeder Nutzer wird durch einen öffentlichen Schlüssel identifiziert. Jeder Beitrag wird signiert. Jeder Client überprüft diese Signaturen.
+- Clients holen Daten von Relays ihrer Wahl und veröffentlichen Daten an andere Relays ihrer Wahl. Ein Relay kommuniziert nicht mit anderen Relays, sondern nur direkt mit Nutzern.
+
+Um nostr zu nutzen, brauchst du einen [Schlüssel](#keys) und einen [Client](#clients).
+
+- Jeder nutzt einen Client. Das kann ein nativer Client, ein Web-Client usw. sein.
+- Um etwas zu veröffentlichen, schreibst du einen Beitrag, signierst ihn mit deinem Schlüssel und sendest ihn an mehrere Relays (Server, die von jemand anderem oder dir selbst betrieben werden).
+- Um Updates von anderen zu erhalten, fragst du mehrere Relays, ob sie etwas über diese anderen Personen wissen.
+- Jeder kann ein Relay betreiben. Ein Relay ist sehr einfach. Es tut nichts anderes, als Beiträge von einigen Leuten anzunehmen und an andere weiterzuleiten.
+- Relays müssen nicht vertraut werden. Signaturen werden auf der Client-Seite überprüft.
+
+## Keys
+
+Deine Schlüssel sind deine Identität. Du kannst dir deinen öffentlichen Schlüssel (`npub...`) als
+deinen Benutzernamen vorstellen und deinen privaten Schlüssel (`nsec...`) als dein Passwort.
+
+Zwei kurze Hinweise:
+
+- ⚠️ **GIB DEINEN PRIVATEN SCHLÜSSEL NIEMALS AUF WEBSITES EIN**[^fn-xss] ⚠️
+- Speichere deine Schlüssel sicher und teile deinen privaten Schlüssel nicht
+
+Schlüssel existieren in zwei Formaten: `hex` und dem oben genannten npub/nsec. Du kannst ein
+[Schlüssel-Konvertierungstool](https://github.com/rot13maxi/key-convertr)[^fn-keys] verwenden,
+um zwischen den beiden Formaten zu konvertieren.
+
+[^fn-keys]: Es gibt auch [damus.io/key](https://damus.io/key/), aber verwende es NICHT für Konvertierungen privater Schlüssel. Gib deinen privaten Schlüssel nicht auf Websites ein. Einfach nicht.
+
+[^fn-xss]: Du musst natürlich dem Betreiber der Website vertrauen, und einige Clients sind anfällig für XSS-Angriffe. Viele Leute wurden bereits erwischt und mussten ihre nostr-Identität neu aufbauen.
+
+Verwende [Alby](https://getalby.com) oder [nos2x](https://github.com/fiatjaf/nos2x), um
+deine Schlüssel zu generieren, oder generiere sie mit einem speziellen Tool wie
+[rana](https://github.com/grunch/rana). Die genannten Erweiterungen speichern
+deine Schlüssel sicher (oder zumindest sicherer). Schau dir [diese Liste](https://spatianostra.com/a-simple-list-of-nostr-signers/) an für eine Auswahl an Schlüsselverwaltungstools.
+
+- [Nostr in der Alby-Erweiterung](https://blog.getalby.com/nostr-in-the-alby-extension/)
+- [Die nos2x-Browsererweiterung und warum du sie nutzen solltest](https://youtu.be/IoLw-3ok3_M)
+
+Auf Mobilgeräten wird empfohlen, einen nativen Signer wie [Amber] auf Android oder
+[Nostash] auf iOS zu verwenden.
+
+[Amber]: https://github.com/greenart7c3/Amber?tab=readme-ov-file#download-and-install
+[Nostash]: https://apps.apple.com/us/app/nostash/id6744309333
+
+Du kannst deine Schlüssel auch auf andere Weise generieren, wenn du weißt, was du tust.[^bip85]
+Es sind noch frühe Tage, also sei darauf vorbereitet, auf die Nase zu fallen.
+
+[^bip85]: [BIP-85](https://bip85.com/) ist z.B. eine Option.
+
+## Clients
+
+Schau regelmäßig auf [nostr.net](https://www.nostr.net/) vorbei, das eine kuratierte
+Liste von Clients führt, oder wirf einen Blick auf die [Client-Vergleichstabelle](https://github.com/vishalxl/Nostr-Clients-Features-List).
+
+Mobile Clients:
+
+- [Damus (iOS & Android)](https://damus.io/) - Twitter-artiger iOS/Android-Client, funktioniert auch auf MacOS[^fn-mac]
+- [Amethyst (Android)](https://www.amethyst.social/) - Twitter-artiger Android-Client
+- [Flotilla (Android)](https://play.google.com/store/apps/details?id=social.flotilla&hl=en_US) - DMs und Gruppenchats
+- [Nostur (iOS)](https://apps.apple.com/us/app/nostur/id1672780508) - nativer iOS/iPad-Client mit MacOS[^fn-mac]-Version
+- [Openvibe (iOS & Android)](https://play.google.com/store/apps/details?id=com.plebstr.client) - Nostr, Threads, Bluesky und Mastodon in einem Client
+- [Primal (iOS & Android)](https://primal.net/downloads) - Sauber und performant, aber noch nicht sehr funktionsreich
+- [Yakihonne (iOS & Android)](https://yakihonne.com/yakihonne-mobile-app) - Plattformübergreifender Nostr-Client
+
+Weitere native Clients sind in Entwicklung, darunter Nostros[^nostros] und Voyage[^voyage].
+
+[Nootti](https://nootti.com) ist der erste native iOS-Cross-Posting-Client für Nostr, Bluesky und Mastodon. [Nos](https://nos.social/) ist ein weiterer iOS-Client, der mit anderen sozialen Protokollen integriert.
+
+Web-Clients:
+
+- [primal.net](https://primal.net/) - Entdecke deinen Tribe, dein Netzwerk und globale Trends
+- [phoenix.social](https://phoenix.social/) - Einfache Oberfläche mit automatischem Bild-Upload
+- [phoenix.deck](https://phoenix.social/deck) - Eine Tweetdeck-ähnliche Version des Snort-Clients
+- [noStrudel](https://nostrudel.ninja/) - Unterstützt viele NIPs inkl. Communities, Streams, Blogs und mehr
+- [coracle.social](https://coracle.social/) - Suche, Filter und Micro-Apps
+- [jumble](https://jumble.social/) - Entdecke Content-Feeds nach Relay und erstelle eigene Relay-Sets
+- [iris.to](https://iris.to/) - Saubere Oberfläche und reich an Funktionen
+- [x21](https://x21.social/) - Saubere Oberfläche
+- [nostria](https://nostria.app/) - Entdecke Relay-Feeds, Themen, Musik und mehr
+- [grimoire](https://grimoire.rocks/) - Ein nostr-Client für Magier
+
+Auf Android kannst du den [Kiwi Browser](https://kiwibrowser.com/) verwenden, um die
+[Alby](https://getalby.com)- oder [nos2x](https://github.com/fiatjaf/nos2x)-Erweiterung
+zu nutzen, was dir erlaubt, jeden Web-Client zu verwenden.
+
+[^nostros]: [KoalaSat/nostros](https://github.com/KoalaSat/nostros)
+[^voyage]: [dluvian/Voyage](https://github.com/dluvian/voyage)
+
+Es gibt auch [Nostr Console](https://github.com/vishalxl/nostr_console),
+[algia](https://github.com/mattn/algia), und
+[nostr-commander](https://github.com/8go/nostr-commander-rs), falls du auf CLI-Kram stehst.
+
+[^fn-mac]: Nur Apple Silicon (M1 oder M2 Chip)
+
+Web-Clients für Content-Ersteller:
+
+- [ZapStream](https://zap.stream/) - Streaming auf nostr ermöglicht sofortige Monetarisierung von Inhalten.
+- [Habla](https://habla.news/) und [yakihonne](https://yakihonne.com/) - Langform-Beiträge auf nostr, ähnlich wie Medium.
+- [Highlighter](https://highlighter.com/) - Client zum Lesen und Hervorheben von Langform-Inhalten.
+- [Shipyard](https://shipyard.pub/) - Schreibe, plane und booste deine Notes.
+- [Wavlake](https://www.wavlake.com/) - Eine Musikplattform ähnlich wie Spotify.
+- [Satellite.earth](https://satellite.earth/) - Fokus auf Reddit-ähnliche Leseerfahrung, bietet auch CDN-Medienhosting und andere nostr-Dienste.
+- [Npub.pro](https://npub.pro/) - Nostr-basierte Websites zur Präsentation von Creator-Inhalten.
+- [Pidgeon](https://pidgeon.lol/) - Verfasse und plane Notes.
+
+Desktop-Clients:
+
+- [Gossip](https://github.com/mikedilger/gossip) - Fortschrittlicher, datenschutzbewusster Nostr-Desktop-Client mit Multi-Relay-Unterstützung, sicherer Schlüsselverwaltung und umfangreichen Moderations- und Anpassungsoptionen
+- [Notedeck](https://damus.io/notedeck/) - Blitzschneller, nativer Multi-Account-Nostr-Client für Desktop (vom Damus-Team)
+- [more-speech](https://github.com/unclebob/more-speech) - Leistungsfähiger Clojure-basierter Nostr-Client für Desktop, fokussiert auf robuste Inhaltsmoderation, Kuratierung und erweiterte Relay-Verwaltung
+
+## Relays
+
+Relays sind einfache Server, die du jederzeit hinter dir lassen kannst ([sie können also nicht
+böse werden](https://youtu.be/5FbgDUQjziM)). Du musst deinen Client mit einem Relay verbinden, damit er funktioniert. Es gibt
+viele Relays und du kannst dein eigenes betreiben. Schau dir [dieses Video](https://youtu.be/TFH7Xr0cJ0w) an für eine kurze Anleitung zur Relay-Verwaltung.
+
+- [nostr.watch](http://nostr.watch/) - Verzeichnis von kostenpflichtigen und kostenlosen Relays
+- [nostr.info](https://nostr.info/relays/) - Verzeichnis bekannter nostr-Relays
+- [relay.tools](https://relay.tools/) - öffentlicher Relay-Browser
+
+Eigenes Relay betreiben:
+
+- [Nostr Relay Server in unter 5 Minuten aufsetzen](https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under)[^fn-fork]
+- Ein natives, persönliches Relay auf Android betreiben mit [Citrine](https://github.com/greenart7c3/Citrine?tab=readme-ov-file#download)
+- [nostr-relay-tray](https://github.com/CodyTseng/nostr-relay-tray/releases) installieren für ein einfaches, lokales Relay auf deinem Desktop
+- Ein leistungsfähiges Community-Relay mit vielen Features auf einem günstigen VPS hosten mit [Pyramid](https://github.com/fiatjaf/pyramid)
+
+Kostenpflichtige Relays:
+
+Kostenpflichtige Relays bekämpfen Spam effektiv, indem sie den Nutzern eine kleine Gebühr in
+Sats berechnen. Du kannst deinen globalen Feed auf kostenpflichtige Relays beschränken, was
+fast allen Spam eliminiert.
+
+[^fn-fork]: Fork mit kleinen Änderungen/Fixes: [Install a nostr relay](https://www.massmux.com/install-a-nostr-relay/)
+
+Besondere Relays:
+
+Relays können auch als [Inhaltskuratoren](https://youtu.be/CL34LnBs0OQ) fungieren, verschiedene Interaktionsmöglichkeiten freischalten, die Heimat von Communities oder Gruppen sein, und mehr.
+Hier ein Beispiel für einen menschlich kuratierten Feed: [Link](https://jumble.social/?r=relays.land/spatianostra).
+
+## Tools
+
+Die Verwaltung deiner nostr-Schlüssel UND deines Profils ist genauso wichtig wie das Sichern deiner privaten Schlüssel für Bitcoin!
+
+- [Nostr Metadata](https://metadata.nostr.com/) - ein Backup-Tool für Profil und Follower-Liste.
+- [NostrSync](https://nostrsync.vercel.app/) - ein weiterer Dienst zum Backup von Profil UND nostr-Events.
+- [Nostr Follows](https://follows.nostr.com/) - verlorene Kontakte/Follows wiederherstellen.
+- [Nostr Delete](https://delete.nostr.com/) - Löschanfrage für nostr-Events bei den hostenden Relays.
+
+nostr kann mehr als nur Social Media.
+
+- [Asknostr](https://asknostr.site) - Q&A-Plattform (Alternative zu Quora/StackOverflow)
+- [Listr](https://listr.lol/) - Listen erstellen und verwalten für unterstützende nostr-Apps.
+- [nosbin](https://nosbin.com/) - Pastebin über nostr.
+- [Zap.Cooking](https://zap.cooking/) - Rezepte erstellen, entdecken oder teilen.
+- [Badges](https://nostrsigil.com) - Badges erstellen und an Freunde oder Follower vergeben.
+- [Emojis](https://emojito.meme/) - Emoji-Pakete erstellen oder nutzen, die von den meisten nostr-Clients unterstützt werden.
+- [Pinja](https://www.yumyu.me/) - URLs als Lesezeichen pinnen.
+- [Lantern](https://chromewebstore.google.com/detail/lantern/jjoijlenmgefkaeiomoaelcljfibpcgh) - Hervorheben, annotieren und diskutieren von allem im Web.
+- [Formstr](https://formstr.app/dashboard) - individuelle oder Template-Formulare erstellen, überall zugänglich.
+- [Gitworkshop](https://gitworkshop.dev/) - Code-Zusammenarbeit über nostr.
+- [Plektos](https://plektos.app/) - Meetup- und Veranstaltungskalender.
+- [Wikifreedia](https://wikifreedia.xyz/) - Wikis auf nostr, gefiltert nach deinem Web of Trust. Oder nicht.
+- [Boris](https://read.withboris.com/) - eine vollständige Leser-App, mit Fokus auf lokales, Offline-Lesen und das Teilen von Highlights.
+
+## Games
+
+Spiele? WTF? Ja, Spiele:
+
+- [Jester](https://jesterui.github.io/) - Schach über nostr von theborakompanioni
+- [Flappy Nostrich](https://flappy-nostrich.vercel.app/) - Navigiere durch Bitcoin-Preisdiskussionen, um guten Content zu finden
+- [Word5](https://word5.otherstuff.ai/) - Wie Wordle, aber auf nostr
+- [Puzzl35](https://puzzl35.com/) - Verwandle deine Fotos und Kunst in Puzzles zum Teilen mit Freunden
+
+---
