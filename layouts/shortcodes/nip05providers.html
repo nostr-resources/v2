@@ -1,0 +1,12 @@
+{{ $type := .Get 0 | default "free" }}
+{{ range site.Data.nip05providers }}
+  {{ if eq $type "free" }}
+    {{ if not .price }}
+- [{{ .name }}]({{ .link }})
+    {{ end }}
+  {{ else if eq $type "paid" }}
+    {{ if .price }}
+- [{{ .name }}]({{ .link }}) ({{ .price }})
+    {{ end }}
+  {{ end }}
+{{ end }}

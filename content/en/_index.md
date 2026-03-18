@@ -321,3 +321,117 @@ Games? WTF? Yes, games:
 - [Puzzl35](https://puzzl35.com/) - Turn your photos and art into puzzles to share with your friends
 
 ---
+
+## Tips & Tricks
+
+Some things work a bit differently and aren't always obvious, such as:
+
+- [Posting images](#posting-images)
+- [Nostr Address](#nostr-addresses)
+- [Receiving Zaps](#receiving-zaps)
+
+### Posting images
+
+Many popular clients support image uploads directly. (Keep in mind that all
+uploaded images to external hosts are public, so don't upload confidential
+things willy-nilly.)
+
+Most clients will display image URLs as images, so you can just upload any image
+to image sharing sites and post the URL like this:
+
+```
+https://i.ibb.co/w4WvnYb/image.png
+```
+
+This also works for videos.
+
+Here are some free image hosts:
+
+- [nostr.build](https://nostr.build/)
+- [imgbb.com](https://imgbb.com/)
+- [imgur](https://imgur.com/)
+- [postimages.org](https://postimages.org/)
+- [nostrcheck.me](https://nostrcheck.me/public/)
+
+[Blossom](https://github.com/hzrd149/blossom) uses nostr to decentralize media hosting.
+If your favorite social client offers blossom support, check out [blossomservers.com](https://blossomservers.com/)
+to find a list of rated and reviewed blossom servers.
+
+If you still have an X/twitter account, you can attach your profile picture to your nostr profile
+by [following this guide](https://medium.com/@_Bosch_/how-to-use-your-twitter-display-picture-on-nostr-fd43c6a26257).
+
+### Nostr Addresses
+
+Having a nostr address (aka NIP-05) can make it easier for people to find your profile, associate you
+with a business or organization, help to guard against impersonation, or provide access to members-only areas.
+
+If you have a domain and want to host your own address, here is some
+useful info:
+
+- [NVK's guide (using Github Pages)](https://nvk.org/n00b-nip5)
+- [metasikander's guide (generic)](https://gist.github.com/metasikander/609a538e6a03b2f67e5c8de625baed3e)
+
+There are also centralized nostr address providers that you can use. Paid providers often offer other
+services alongside of address hosting. Be aware that all these _are_ centralized and that they can rug-pull
+you at any moment:
+
+{{< nip05providers "free" >}}
+
+Paid services:
+
+{{< nip05providers "paid" >}}
+
+Provider missing? Price changed? \
+Please [create a PR](https://github.com/nostr-resources/nostr-resources-v2/blob/main/data/nip05providers.yaml) or [open an issue](https://github.com/nostr-resources/nostr-resources-v2/issues) to fix it!
+
+### Receiving Zaps
+
+Zaps are [V4V](https://value4value.info/) lightning payments that are broadcast
+as nostr events, so that clients can display them on user profiles and specific
+notes.
+
+To receive zaps you need a lightning wallet that supports
+[NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md).
+
+Popular custodial solutions are:
+
+- [Wallet of Satoshi](https://walletofsatoshi.com/) - recommended for mobile (not available everywhere)
+- [Coinos](https://coinos.io/) - a web wallet with Nostr Wallet Connect capabilities
+- [Primal](https://primal.net/home) - nostr client with built-in Bitcoin wallet for iOS, Android, and web
+- [Rizful](https://rizful.com/) - easy to use Nostr Wallet Connect capable lightning wallet
+
+The Cashu protocol is bringing bitcoin-backed ecash to custodial Nostr zaps and beyond. It is still quite new (aka experimental). You can read more about it [here](https://cashu.space/). A couple of nice wallets to try are:
+
+- [Minibits](https://www.minibits.cash/) - Android native
+- [Cashu.me](https://wallet.cashu.me/welcome) - PWA for iOS and Android
+- [Macadamia](https://macadamia.cash/) - iOS native
+
+You can find ecash mints and read reviews at [bitcoinmints.com](https://bitcoinmints.com/?tab=mints).
+
+Self-custodial solutions:
+- [Zeus](https://zeusln.app/)
+- [Alby Hub](https://blog.getalby.com/what-is-alby-hub/)
+
+### Mentions & Deep Links
+
+You can mention a note or a user by putting an "@" before an _npub_ or _note_ like this:
+
+- `@npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc`
+- `@note1m2ev3e2ma7a84rr8053qhsggeg6apmp00445v8k7tyeqvhu5u8aqpc30sp`
+
+When mentioning a note in another note, the note will be shown as a quote-note.[^fn-quotenote]
+
+Most clients support the `nostr:` URL scheme as defined in
+[NIP-21](https://github.com/nostr-protocol/nips/blob/master/21.md), which means
+you can link to your nostr profile by putting "nostr:" in front of your npub.
+This will result in a link that opens in the user's nostr client, like
+so: [open my nostr
+profile](nostr:npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc).
+
+You can use this for http redirects too, which can be used as a way to verify your nostr profile if you own a domain, like so: [dergigi.com/npub](https://dergigi.com/npub)
+
+There is even a [redirect tool](https://nostredirect.davidcoen.it/) that you can use; h/t to [David](nostr:npub149mp2m0q8prpdys7x2lusv2vceraxwzr4ajf6tv3l24my3gtszxsncas0t) for putting it together.
+
+[^fn-quotenote]: How's that for a tongue twister?
+
+---
