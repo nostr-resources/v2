@@ -313,3 +313,277 @@ Spiele? WTF? Ja, Spiele:
 - [Puzzl35](https://puzzl35.com/) - Verwandle deine Fotos und Kunst in Puzzles zum Teilen mit Freunden
 
 ---
+
+## Tipps & Tricks
+
+Manche Dinge funktionieren etwas anders und sind nicht immer offensichtlich, zum Beispiel:
+
+- [Bilder posten](#bilder-posten)
+- [Nostr-Adressen](#nostr-adressen)
+- [Zaps empfangen](#zaps-empfangen)
+
+### Bilder posten
+
+Viele beliebte Clients unterstützen den Bild-Upload direkt. (Bedenke, dass alle
+hochgeladenen Bilder bei externen Hostern öffentlich sind, also lade nichts Vertrauliches
+leichtfertig hoch.)
+
+Die meisten Clients zeigen Bild-URLs als Bilder an, du kannst also einfach ein Bild
+auf Bildhosting-Seiten hochladen und die URL so posten:
+
+```
+https://i.ibb.co/w4WvnYb/image.png
+```
+
+Das funktioniert auch für Videos.
+
+Hier sind einige kostenlose Bildhoster:
+
+- [nostr.build](https://nostr.build/)
+- [imgbb.com](https://imgbb.com/)
+- [imgur](https://imgur.com/)
+- [postimages.org](https://postimages.org/)
+- [nostrcheck.me](https://nostrcheck.me/public/)
+
+[Blossom](https://github.com/hzrd149/blossom) nutzt nostr, um Medienhosting zu dezentralisieren.
+Falls dein bevorzugter Social Client Blossom unterstützt, schau dir [blossomservers.com](https://blossomservers.com/)
+an für eine Liste von bewerteten Blossom-Servern.
+
+Falls du noch einen X/Twitter-Account hast, kannst du dein Profilbild an dein nostr-Profil anhängen,
+indem du [dieser Anleitung](https://medium.com/@_Bosch_/how-to-use-your-twitter-display-picture-on-nostr-fd43c6a26257) folgst.
+
+### Nostr-Adressen
+
+Eine nostr-Adresse (auch NIP-05) kann es einfacher machen, dein Profil zu finden, dich mit einem
+Unternehmen oder einer Organisation zu assoziieren, vor Identitätsdiebstahl zu schützen oder Zugang zu exklusiven Bereichen zu ermöglichen.
+
+Wenn du eine Domain hast und deine eigene Adresse hosten möchtest, findest du hier nützliche Infos:
+
+- [NVKs Anleitung (mit Github Pages)](https://nvk.org/n00b-nip5)
+- [metasikanders Anleitung (generisch)](https://gist.github.com/metasikander/609a538e6a03b2f67e5c8de625baed3e)
+
+Es gibt auch zentralisierte nostr-Adressanbieter. Kostenpflichtige Anbieter bieten oft weitere
+Dienste neben dem Adresshosting an. Beachte, dass alle diese Anbieter zentralisiert _sind_ und dir
+jederzeit den Teppich unter den Füßen wegziehen können:
+
+{{< nip05providers "free" >}}
+
+Kostenpflichtige Dienste:
+
+{{< nip05providers "paid" >}}
+
+Anbieter fehlt? Preis geändert? \
+Bitte [erstelle einen PR](https://github.com/nostr-resources/nostr-resources-v2/blob/main/data/nip05providers.yaml) oder [eröffne ein Issue](https://github.com/nostr-resources/nostr-resources-v2/issues)!
+
+### Zaps empfangen
+
+Zaps sind [V4V](https://value4value.info/) Lightning-Zahlungen, die als
+nostr-Events gesendet werden, damit Clients sie auf Nutzerprofilen und einzelnen
+Notes anzeigen können.
+
+Um Zaps zu empfangen, brauchst du ein Lightning-Wallet, das
+[NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md) unterstützt.
+
+Beliebte custodiale Lösungen sind:
+
+- [Wallet of Satoshi](https://walletofsatoshi.com/) - empfohlen für Mobilgeräte (nicht überall verfügbar)
+- [Coinos](https://coinos.io/) - ein Web-Wallet mit Nostr Wallet Connect Funktionen
+- [Primal](https://primal.net/home) - nostr-Client mit integriertem Bitcoin-Wallet für iOS, Android und Web
+- [Rizful](https://rizful.com/) - einfach zu bedienendes Lightning-Wallet mit Nostr Wallet Connect
+
+Das Cashu-Protokoll bringt Bitcoin-gedecktes Ecash zu custodialen Nostr-Zaps und darüber hinaus. Es ist noch recht neu (also experimentell). Mehr dazu findest du [hier](https://cashu.space/). Ein paar nette Wallets zum Ausprobieren:
+
+- [Minibits](https://www.minibits.cash/) - Android-nativ
+- [Cashu.me](https://wallet.cashu.me/welcome) - PWA für iOS und Android
+- [Macadamia](https://macadamia.cash/) - iOS-nativ
+
+Ecash-Mints und Bewertungen findest du auf [bitcoinmints.com](https://bitcoinmints.com/?tab=mints).
+
+Self-custodial Lösungen:
+- [Zeus](https://zeusln.app/)
+- [Alby Hub](https://blog.getalby.com/what-is-alby-hub/)
+
+### Erwähnungen & Deep Links
+
+Du kannst ein Note oder einen Nutzer erwähnen, indem du ein "@" vor einen _npub_ oder _note_ setzt:
+
+- `@npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc`
+- `@note1m2ev3e2ma7a84rr8053qhsggeg6apmp00445v8k7tyeqvhu5u8aqpc30sp`
+
+Wenn du ein Note in einem anderen Note erwähnst, wird es als Quote-Note angezeigt.[^fn-quotenote]
+
+Die meisten Clients unterstützen das `nostr:` URL-Schema gemäß
+[NIP-21](https://github.com/nostr-protocol/nips/blob/master/21.md), was bedeutet,
+dass du auf dein nostr-Profil verlinken kannst, indem du "nostr:" vor deinen npub setzt.
+Das ergibt einen Link, der sich im nostr-Client des Nutzers öffnet, wie
+z.B.: [mein nostr-Profil öffnen](nostr:npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc).
+
+Du kannst das auch für HTTP-Weiterleitungen nutzen, um dein nostr-Profil zu verifizieren, wenn du eine Domain besitzt: [dergigi.com/npub](https://dergigi.com/npub)
+
+Es gibt sogar ein [Weiterleitungs-Tool](https://nostredirect.davidcoen.it/); Dank an David dafür.
+
+[^fn-quotenote]: Zungenbrecher auf Englisch: "quote-note in another note"
+
+## Statistiken
+
+Als [Jack](https://twitter.com/jack/status/1603945963944480768) beitrat
+(und einige nostr-Entwickler finanzierte), nahm das allgemeine Interesse an nostr Fahrt auf und wächst seitdem. Genaue Statistiken sind bei einem dezentralen Protokoll schwer zu erfassen, aber hier sind einige gute Beispiele:
+
+- [npub.world](https://npub.world/stats)
+- [nostr stats](https://stats.andotherstuff.org/)
+- [nashboard.space](https://nashboard.space/)
+
+## Sats
+
+Einige Clients rendern Lightning-Invoices nativ und zeigen den Empfänger,
+den Betrag und einen Bezahl-Button an. Ein solcher Client ist Damus, der ein schönes
+[kleines Widget und einen Bezahl-Button](https://i.ibb.co/zhd4Fbs/damus-invoice-render.png) zeigt.
+
+## Suche
+
+Die meisten Clients unterstützen einfache Suche, aber es gibt auch:
+
+- [ants🐜](https://ants.sh/)
+- [nos.today](https://nos.today)
+- [npub.world](https://npub.world/)
+- [nosey](https://nosey.vercel.app/)
+
+Einige DVMs, wie [Noogle](https://noogle.lol/), haben ebenfalls Suchfunktionen.
+
+### Bots
+
+- [Wie man einen nostr GM-Bot baut](https://dergigi.com/2023/01/19/how-to-build-a-nostr-gm-bot/) von Gigi
+- [nostr_bot](https://docs.rs/nostr-bot/latest/nostr_bot/) Rust-Crate
+- [nostr GPT bot](https://github.com/Marfusios/nostr-client/tree/master/apps/nostr-bot) Ein GPT 3.5 Bot für nostr.
+
+### RSS
+
+Du kannst auch einen RSS-Feed auf nostr erstellen, indem du [dieser Anleitung](https://habla.news/a/naddr1qvzqqqr4gupzp89qh469qapddgsrr8qw84xx08y7q34fm3cw3m64c2g9ufq9ydqtqyghwumn8ghj7mn0wd68ytnhd9hx2tcqzpkngat8w4nhzve3ve6k2d3hvyus88uu4f) folgst.
+[Narr](https://github.com/fiatjaf/narr) ist ein webbasierter nostr-Feed-Aggregator und RSS-Reader.
+Es gibt auch [Noflux](https://github.com/fiatjaf/noflux).
+
+Du kannst automatisch einen Podcast-Feed aus jedem npub generieren mit [castr.me](http://castr.me/).
+
+## Bücher
+
+- [Building Nostr](https://building-nostr.coracle.social/) von hodlbod - Ein Leitfaden für Entwickler, die auf dem dezentralen sozialen Protokoll bauen
+
+## Podcasts
+
+- [Nostr Compass](https://podcast.nostrcompass.org/) - wöchentliche Interviews mit nostr-Entwicklern
+- [nostrovia](https://nostrovia.org/) - nostr-Nachrichtenüberblick
+- [La Cosa Nostr](https://tunein.com/podcasts/Technology-Podcasts/La-Cosa-Nostr---The-Decentralized-Network-p3709902/?topicId=355452728) - Interviews mit Relay-Betreibern und Buildern
+- [Nostr Talks](https://www.curiousdk.com/podcast) - Nostr-bezogene Nachrichten und Interviews
+- [Thank God For Nostr](https://podcasts.apple.com/us/podcast/thank-god-for-nostr/id1694064646) - nostr aus christlicher Perspektive
+- [No Solutions](https://fountain.fm/show/1jdehAGo1tgBdKZXIo8K) - Keine Lösungen; nur Trade-offs. Auf dem Weg zu einem besseren Internet.
+- [Nostr Rising](https://bitcoin.review/nostr/) - eine [Bitcoin.Review](https://bitcoin.review/)-Serie
+- [Bitcoin And...](https://fountain.fm/show/eK5XaSb3UaLRavU3lYrI) - Nachrichten zum Gebrauch
+- [Plebchain Radio](https://fountain.fm/show/0N6GGdZuYNNG7ysagCg9) - wöchentliche Live-Audioshow von Plebs, für Plebs
+
+---
+
+## Datenschutz
+
+Es gibt mehrere [Datenschutzprobleme](https://consentonchain.github.io/blog/posts/nostr-privacy/) bei der Nutzung von nostr.
+
+Deine IP-Adresse wird den Relays offengelegt, mit denen du dich verbindest. Erwäge daher die Nutzung eines VPN
+oder Ähnlichem. Einige Clients unterstützen auch die Verbindung über Tor.
+Tor-nostr-Relays existieren, aber nicht alle Clients unterstützen sie.
+
+Relays wissen auch, welche öffentlichen Schlüssel du anforderst, was bedeutet, dass dein öffentlicher Schlüssel
+mit deiner IP-Adresse verknüpft wird.
+
+### Datenschutz & Bild-Uploads
+
+Einige Drittanbieter-Medienhoster können möglicherweise deine IP-Adresse sehen und weitergeben.
+
+### Datenschutz & Direktnachrichten
+
+Nur der Nachrichteninhalt ist auf Nostr verschlüsselt: Absender, Empfänger und Zeitstempel sind für alle sichtbar. Es gibt mehrere Ansätze, dies zu verbessern. Um zu verstehen, wie deine Direktnachrichten gehandhabt werden, erkundige dich bei deinem bevorzugten Nachrichtenclient-Entwickler.
+
+Für wirklich sichere und private Nachrichtenübermittlung schau dir [White Noise](https://www.whitenoise.chat/) an, einen dezentralen Messenger auf Nostr-Basis mit Ende-zu-Ende-Verschlüsselung, Forward Secrecy und Post-Compromise Security.
+
+---
+
+## Weitere Infos
+
+- [nostr.how](https://nostr.how/) von Jeff G.
+- [usenostr.org](https://usenostr.org/) von Pluja
+- [nostr.net](https://www.nostr.net/) alias awesome-nostr von Aljaz
+- [nostr-protocol/nostr](https://github.com/nostr-protocol/nostr) von fiatjaf
+- [nostr.org](https://nostr.org/) von elidy
+- [whynostr.com](https://www.whynostr.com/) von zach
+
+Artikel und Erklärungen:
+
+- [Can Nostr Make Twitter's Dreams Come True?](https://reason.com/2024/08/13/can-nostr-make-twitters-dreams-come-true/) von Alex Gladstein
+- [The Power of Nostr: Decentralized Social Media and More](https://www.lynalden.com/the-power-of-nostr/) von Lyn Alden
+- [Implications of Open Monetary and Information Networks](https://www.lynalden.com/open-networks/) von Lyn Alden
+- [What Is Nostr and How Do I Use It?](https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it) von Walker V.
+- [What is Nostr, and how to start using Nostr](https://github.com/vishalxl/nostr_console/discussions/31) von Vishal
+- [Nostr, an Introduction](https://wiki.wellorder.net/post/nostr-intro/) von Greg Heartsfield
+- [Nostr Newcomers Most Common Questions and Answers](https://uselessshit.co/resources/nostr/) von pitiunited
+- [Why Nostr Matters](https://blog.lopp.net/why-nostr-matters/) von Jameson Lopp
+
+Videos:
+
+- [How To Use NOSTR](https://youtu.be/qn-Zp491t4Y) von BTC Sessions
+- [Social Media is broken. Can we fix it?](https://youtu.be/aA-jiiepOrE) von Max DeMarco
+- [Nostr - FOSDEM 2025](https://youtu.be/Tbt3jL1Ms0w) von Wouter Constant
+- [Nostr: the decentralized future of social media?](https://www.youtube.com/live/pi2JbHWd_BM?si=u6NcQk86B3zSAQXe) von ReasonTV mit Will Casarin
+
+Für Konferenzvideos schau dir den [nostr world](https://www.youtube.com/@nostrworld) Kanal an.
+
+---
+
+# Mitmachen
+
+nostr ist ein offenes Protokoll und die meisten Clients sind Open Source.
+Du bist herzlich eingeladen, Bugs zu melden und Pull Requests zu erstellen!
+
+nostr-Protokoll:
+
+- [NIPs](https://github.com/nostr-protocol/nips)
+- [Kind Registry](https://nostr-protocol.github.io/registry-of-kinds/)
+- [Documentation Registry](https://nostrbook.dev/)
+
+Schau dir [awesome-nostr](https://github.com/aljazceru/awesome-nostr) an für Links zu weiteren Clients, Bibliotheken, Relay-Implementierungen und verwandten Projekten.
+
+[HelloNostrDocs](https://hellonostr.dev/en/) ist ein einfacher Leitfaden für den Einstieg in die nostr-Entwicklung.
+
+Es gibt auch [NostrDesign](https://nostrdesign.org/), eine großartige Ressource für Entwickler und UIX-Design für nostr.
+
+Wenn du zur nostr-Entwicklung spenden möchtest, schau dir verschiedene [nostr-Projekte](https://geyser.fund/?search=nostr) an oder besuche den [OpenSats Nostr Fund](https://opensats.org/funds/nostr).
+
+Diese Seite ist ebenfalls Open Source. Wenn du kannst, [verbessere diese Seite](https://github.com/nostr-resources/nostr-resources-v2). Du kannst auch eine [Übersetzung](#ubersetzungen) erstellen.
+
+---
+
+## Übersetzungen
+
+- [Chinesische Übersetzung](https://mp.weixin.qq.com/s/RoO-oOgGAXpcGyjD8IYBdw) von Cakksakkas
+- [Französische Übersetzung](https://nostr.fr) von Marco.BTC.fr
+- [Spanische Übersetzung](https://bitcoinnostr.com/recursos-de-nostr/) von BitByBit
+- [Deutsche Übersetzung](https://cercatrova.blog/nostr-info-de/) von cercatrova
+- [Italienische Übersetzung](https://gist.github.com/theRescuer/717295270a35b4641081b6ef2cdf3025) von avallanosterza
+- [Brasilianisch-portugiesische Übersetzung](https://gist.github.com/fernandoporazzi/d1c47b4f2a1d2c1a2e0654a2a31668ff) von fernandoporazzi
+
+Bitte [erstelle einen PR](https://github.com/nostr-resources/nostr-resources-v2/pulls), um deine Übersetzung zur obigen Liste hinzuzufügen.
+
+## Über
+
+Dieses Projekt entstand aus [einem
+Gist](https://gist.github.com/dergigi/1ee8dc7e3da4b6572ed785ab24bc9907/revisions),
+das ziemlich hastig zusammengestellt wurde. Sein Zweck war, Menschen zu helfen,
+nostr zu verstehen, und das ist wohl immer noch der Zweck.
+
+Teile des obigen Textes stammen von
+[nostr-protocol/nostr](https://github.com/nostr-protocol/nostr) und
+[nostr.net](https://www.nostr.net/). Ich habe einiges weggelassen, daher sind
+die Beschreibungen und Erklärungen als subjektive Zusammenfassung zu betrachten.
+
+Tippfehler gefunden? Bitte [korrigiere ihn](https://github.com/nostr-resources/nostr-resources-v2/blob/main/content/de/_index.md).
+Vorschläge? Bitte [eröffne ein Issue](https://github.com/nostr-resources/nostr-resources-v2/issues).
+Du willst mich anschreien, weil du das Ganze für Quatsch hältst? Bitte [finde mich auf nostr](https://npub.world/npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc).
+
+---
