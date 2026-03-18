@@ -1,0 +1,39 @@
+<footer class="bg-[#111] border-t border-white/10 text-center py-8 px-4 mt-16">
+  <div class="max-w-[45em] mx-auto space-y-4">
+    <!-- License -->
+    <p class="text-sm text-[#aaa]">
+      {{ i18n "footer_license" }}
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" class="text-[#B780FF] hover:underline">CC BY-SA 4.0</a>.
+      <a href="https://dergigi.com/support" class="text-[#B780FF] hover:underline">{{ i18n "footer_support" | default "Show your support" }}</a>.
+    </p>
+
+    <!-- Social -->
+    <div class="flex justify-center gap-4 text-lg">
+      {{ range site.Params.social }}
+      <a href="{{ .url | safeURL }}" class="text-[#f8f8f8] hover:text-[#B780FF] transition-colors" title="{{ .name }}">
+        {{ if eq .name "nostr" }}
+        <svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        {{ else if eq .name "github" }}
+        <svg class="w-5 h-5 inline-block" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        {{ else if eq .name "bitcoin" }}
+        <svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 100 24 12 12 0 000-24zm1.38 16.62h-1.1v1.96h-1.1v-1.93h-.73v1.93h-1.1v-1.96H7.78v-1.15h.74c.4 0 .53-.24.53-.5V9.88c0-.37-.2-.55-.6-.55h-.67V8.18h1.57V6.25h1.1v1.93h.73V6.25h1.1v2c1.47.12 2.86.55 2.86 2.17 0 1.02-.5 1.58-1.22 1.86.95.27 1.58.88 1.58 2.02 0 1.78-1.56 2.24-3.12 2.32zm-.17-6.54c0-.96-.87-1.1-1.74-1.13v2.26c.87-.03 1.74-.17 1.74-1.13zm.27 3.42c0-1.05-.98-1.2-2.01-1.23v2.46c1.03-.03 2.01-.18 2.01-1.23z"/></svg>
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+
+    <!-- Sister Projects -->
+    {{ with site.Data.projects }}
+    <p class="text-sm text-[#aaa]">
+      {{ i18n "footer_sister_projects" }}
+      {{ $first := true }}{{ range . }}{{ if and .fav (ne .code "NR") }}{{ if not $first }} · {{ end }}<a href="{{ .link }}" class="text-[#B780FF] hover:underline">{{ .name }}</a>{{ $first = false }}{{ end }}{{ end }}
+      · <a href="https://dergigi.com/projects" class="text-[#B780FF] hover:underline">more…</a>
+    </p>
+    {{ end }}
+
+    <!-- Credit -->
+    <p class="text-sm text-[#aaa]">
+      {{ i18n "footer_made_with" }} <a href="https://dergigi.com" class="text-[#B780FF] hover:underline">Gigi</a>
+    </p>
+  </div>
+</footer>

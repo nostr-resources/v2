@@ -1,1 +1,189 @@
 @import "tailwindcss";
+
+/* Prose: markdown content styling */
+.prose {
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.prose h1 {
+  font-size: 2.1em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+
+.prose h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+
+.prose h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+
+.prose p {
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+.prose a {
+  color: #B780FF;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+.prose a:hover {
+  color: #d4b0ff;
+  text-decoration: underline;
+}
+
+.prose strong {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+  padding-left: 1.5em;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-bottom: 0.25em;
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 2em 0;
+}
+
+.prose blockquote {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #aaa;
+  line-height: 1.4;
+  margin: 1.5em 0;
+  padding: 0;
+  border: none;
+}
+
+.prose blockquote p:first-child::before {
+  content: "\201C";
+}
+
+.prose blockquote p:first-child::after {
+  content: "\201D";
+}
+
+.prose cite {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.7em;
+  font-style: normal;
+  color: #aaa;
+}
+
+.prose cite::before {
+  content: "\2014\00a0";
+}
+
+.prose code {
+  font-size: 0.9em;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+.prose pre {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Footnotes */
+.prose .footnotes {
+  margin-top: 3em;
+  font-size: 0.8em;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1em;
+}
+
+.prose .footnotes ol {
+  padding-left: 1.5em;
+}
+
+/* Action buttons (from current site) */
+.action-buttons {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.action-buttons a {
+  color: #f8f8f8 !important;
+}
+
+.button a {
+  display: inline-block;
+  padding: 0.5em;
+  width: 8.5em;
+  margin: 0.21em;
+  color: #fff !important;
+  background-color: #2E2040;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-decoration: none !important;
+  text-align: center;
+  transition: background-color 200ms ease-out;
+}
+
+.button a:hover {
+  background-color: #B780FF;
+  text-decoration: none !important;
+}
+
+/* Table of Contents */
+.toc__anchor {
+  font-size: 85%;
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 0.3em;
+}
+
+.toc__anchor:hover {
+  color: #B780FF;
+}
