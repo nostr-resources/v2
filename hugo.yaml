@@ -9,12 +9,14 @@ languages:
   en:
     languageName: English
     weight: 1
+    contentDir: content/en
     title: nostr Resources
     params:
       description: "nostr is the simplest open protocol for censorship-resistant communication."
   de:
     languageName: Deutsch
     weight: 2
+    contentDir: content/de
     title: nostr Ressourcen
     params:
       description: "nostr ist das einfachste offene Protokoll für zensurresistente Kommunikation."
