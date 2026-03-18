@@ -1,0 +1,25 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.0] - 2026-03-18
+
+### Added
+
+- Hugo site scaffold with `hugo.yaml` configuration
+- i18n support with English and German language configs
+- Content directories per language (`content/en/`, `content/de/`)
+- UI translation strings (`i18n/en.yaml`, `i18n/de.yaml`)
+- Tailwind CSS via standalone CLI (no Node.js dependency)
+- Makefile for local development (`make build`, `make serve`)
+- GitHub Actions workflow for automated build and deploy to GitHub Pages
+- README with setup and translation instructions
+- MIT license
+
+### Fixed
+
+- Asset paths use `relURL` for correct loading on GitHub Pages subpaths
+- `contentDir` set per language for proper content routing
