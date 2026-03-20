@@ -15,20 +15,10 @@
 
         <!-- Language Switcher -->
         {{ if hugo.IsMultilingual }}
-        <li class="relative group">
-          <button class="text-white hover:text-[#B780FF] transition-colors cursor-pointer" aria-label="{{ i18n "language_switcher" }}">
-            {{ upper .Lang }}
-          </button>
-          <ul class="absolute right-0 top-full mt-1 bg-[#111] border border-white/10 rounded shadow-lg hidden group-hover:block min-w-[8em] py-1">
-            {{ range site.Languages }}
-            <li>
-              <a href="{{ "" | relLangURL }}{{ if ne .Lang site.Language.Lang }}{{ .Lang }}/{{ end }}"
-                 class="block px-4 py-1 text-sm text-[#f8f8f8] hover:text-[#B780FF] hover:bg-white/5 transition-colors">
-                {{ .LanguageName }}
-              </a>
-            </li>
-            {{ end }}
-          </ul>
+        <li class="flex items-center gap-1 text-sm" aria-label="{{ i18n "language_switcher" }}">
+          {{ range $i, $lang := site.Languages }}{{ if $i }}<span class="text-white/30">|</span>{{ end }}<a
+            href="{{ "" | relLangURL }}{{ if ne $lang.Lang site.Language.Lang }}{{ $lang.Lang }}/{{ end }}"
+            class="{{ if eq $lang.Lang $.Lang }}text-[#B780FF]{{ else }}text-white/50 hover:text-[#B780FF]{{ end }} transition-colors">{{ upper $lang.Lang }}</a>{{ end }}
         </li>
         {{ end }}
 
