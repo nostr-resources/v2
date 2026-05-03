@@ -31,7 +31,7 @@ params:
     - name: nostr
       url: "nostr:npub166qthqk9lghgpjy8zkxxuwud5n6rtkv7kacsm2ku5w6gfgrruwvq83qv5j"
     - name: github
-      url: https://github.com/nostr-resources/nostr-resources-v2
+      url: https://github.com/nostr-resources/v2
     - name: bitcoin
       url: https://dergigi.com/support
 

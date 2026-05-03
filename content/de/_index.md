@@ -373,7 +373,7 @@ Kostenpflichtige Dienste:
 {{< nip05providers "paid" >}}
 
 Anbieter fehlt? Preis geändert? \
-Bitte [erstelle einen PR](https://github.com/nostr-resources/nostr-resources-v2/blob/main/data/nip05providers.yaml) oder [eröffne ein Issue](https://github.com/nostr-resources/nostr-resources-v2/issues)!
+Bitte [erstelle einen PR](https://github.com/nostr-resources/v2/blob/main/data/nip05providers.yaml) oder [eröffne ein Issue](https://github.com/nostr-resources/v2/issues)!
 
 ### Zaps empfangen
 
@@ -555,7 +555,7 @@ Es gibt auch [NostrDesign](https://nostrdesign.org/), eine großartige Ressource
 
 Wenn du zur nostr-Entwicklung spenden möchtest, schau dir verschiedene [nostr-Projekte](https://geyser.fund/?search=nostr) an oder besuche den [OpenSats Nostr Fund](https://opensats.org/funds/nostr).
 
-Diese Seite ist ebenfalls Open Source. Wenn du kannst, [verbessere diese Seite](https://github.com/nostr-resources/nostr-resources-v2). Du kannst auch eine [Übersetzung](#ubersetzungen) erstellen.
+Diese Seite ist ebenfalls Open Source. Wenn du kannst, [verbessere diese Seite](https://github.com/nostr-resources/v2). Du kannst auch eine [Übersetzung](#ubersetzungen) erstellen.
 
 ---
 
@@ -568,7 +568,7 @@ Diese Seite ist ebenfalls Open Source. Wenn du kannst, [verbessere diese Seite](
 - [Italienische Übersetzung](https://gist.github.com/theRescuer/717295270a35b4641081b6ef2cdf3025) von avallanosterza
 - [Brasilianisch-portugiesische Übersetzung](https://gist.github.com/fernandoporazzi/d1c47b4f2a1d2c1a2e0654a2a31668ff) von fernandoporazzi
 
-Bitte [erstelle einen PR](https://github.com/nostr-resources/nostr-resources-v2/pulls), um deine Übersetzung zur obigen Liste hinzuzufügen.
+Bitte [erstelle einen PR](https://github.com/nostr-resources/v2/pulls), um deine Übersetzung zur obigen Liste hinzuzufügen.
 
 ## Über
 
@@ -582,8 +582,8 @@ Teile des obigen Textes stammen von
 [nostr.net](https://www.nostr.net/). Ich habe einiges weggelassen, daher sind
 die Beschreibungen und Erklärungen als subjektive Zusammenfassung zu betrachten.
 
-Tippfehler gefunden? Bitte [korrigiere ihn](https://github.com/nostr-resources/nostr-resources-v2/blob/main/content/de/_index.md).
-Vorschläge? Bitte [eröffne ein Issue](https://github.com/nostr-resources/nostr-resources-v2/issues).
+Tippfehler gefunden? Bitte [korrigiere ihn](https://github.com/nostr-resources/v2/blob/main/content/de/_index.md).
+Vorschläge? Bitte [eröffne ein Issue](https://github.com/nostr-resources/v2/issues).
 Du willst mich anschreien, weil du das Ganze für Quatsch hältst? Bitte [finde mich auf nostr](https://npub.world/npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc).
 
 ---

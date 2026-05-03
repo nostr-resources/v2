@@ -382,7 +382,7 @@ Paid services:
 {{< nip05providers "paid" >}}
 
 Provider missing? Price changed? \
-Please [create a PR](https://github.com/nostr-resources/nostr-resources-v2/blob/main/data/nip05providers.yaml) or [open an issue](https://github.com/nostr-resources/nostr-resources-v2/issues) to fix it!
+Please [create a PR](https://github.com/nostr-resources/v2/blob/main/data/nip05providers.yaml) or [open an issue](https://github.com/nostr-resources/v2/issues) to fix it!
 
 ### Receiving Zaps
 
@@ -578,7 +578,7 @@ There is also [NostrDesign](https://nostrdesign.org/), a great resource for deve
 
 If you would like to donate to nostr development, have a look at various [nostr projects](https://geyser.fund/?search=nostr) or visit the [OpenSats Nostr Fund](https://opensats.org/funds/nostr).
 
-This site is open source too. If you can, please [improve this page](https://github.com/nostr-resources/nostr-resources-v2). You can also create a [translation](#translations).
+This site is open source too. If you can, please [improve this page](https://github.com/nostr-resources/v2). You can also create a [translation](#translations).
 
 ---
 
@@ -591,7 +591,7 @@ This site is open source too. If you can, please [improve this page](https://git
 - [Italian translation](https://gist.github.com/theRescuer/717295270a35b4641081b6ef2cdf3025) by avallanosterza
 - [Brazilian Portuguese translation](https://gist.github.com/fernandoporazzi/d1c47b4f2a1d2c1a2e0654a2a31668ff) por fernandoporazzi
 
-Please [create a PR](https://github.com/nostr-resources/nostr-resources-v2/pulls) to add your translation to the list above.
+Please [create a PR](https://github.com/nostr-resources/v2/pulls) to add your translation to the list above.
 
 ## About
 
@@ -605,8 +605,8 @@ Some of the text above is copied from
 [nostr.net](https://www.nostr.net/). I just left some stuff out, so consider
 the descriptions and explanations an opinionated summary.
 
-If you found a typo, please [fix it](https://github.com/nostr-resources/nostr-resources-v2/blob/main/content/en/_index.md).
-If you have suggestions, please [create an issue](https://github.com/nostr-resources/nostr-resources-v2/issues).
+If you found a typo, please [fix it](https://github.com/nostr-resources/v2/blob/main/content/en/_index.md).
+If you have suggestions, please [create an issue](https://github.com/nostr-resources/v2/issues).
 If you want to scream at me because you think this whole thing is stupid, please [find me on nostr](https://npub.world/npub1dergggklka99wwrs92yz8wdjs952h2ux2ha2ed598ngwu9w7a6fsh9xzpc).
 
 ---
