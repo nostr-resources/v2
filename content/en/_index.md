@@ -46,23 +46,21 @@ It is free as in freedom and puts the user in control.
 
 # Get Started
 
-While there are [many clients](#clients), the following three are currently
-quite popular: Damus for iOS, Amethyst for Android, and noStrudel for Web.
-Primal is often recommended too, as it works on all platforms.
+While there are [many clients](#clients), Primal and Damus are probably the
+easiest starting point for most newcomers right now. Both work on iOS,
+Android, and the web. If you're on Android, Amethyst and Wisp are excellent
+choices too.
 
 Download a suitable client:
 
 <div class="action-buttons">
   <div class="button">
-    <a href="https://damus.io/" target="_blank">🍎 Damus</a>
-    <a href="https://www.amethyst.social/" target="_blank">🤖 Amethyst</a>
+    <a href="https://primal.net/downloads" target="_blank">📱 Primal</a>
+    <a href="https://damus.io/" target="_blank">📱 Damus</a>
   </div>
   <br/>
-  <a href="https://nostrudel.ninja" target="_blank">🌐 noStrudel</a> &nbsp; · &nbsp;
-  <a href="https://primal.net/" target="_blank">🌐 Primal</a> &nbsp; · &nbsp;
-  <a href="https://coracle.social/" target="_blank">🌐 Coracle</a> &nbsp; · &nbsp;
-  <a href="https://phoenix.social/" target="_blank">🌐 Phoenix</a> &nbsp; · &nbsp;
-  <a href="https://iris.to/" target="_blank">🌐 Iris</a>
+  <a href="https://www.amethyst.social/" target="_blank">🤖 Amethyst</a> &nbsp; · &nbsp;
+  <a href="https://wisp.mobile/" target="_blank">🤖 Wisp</a>
 </div>
 
 ---
@@ -74,8 +72,9 @@ Download a suitable client:
 There is also [nosta.me](https://nosta.me/), which introduces relays and other nostr activities.
 
 **What is the best nostr client?**
-🦚 There is no best. You'll have to [pick a client](#clients) according to your
-tastes!
+🦚 For most newcomers, [Primal](https://primal.net/) and [Damus](https://damus.io/)
+are great places to start. If you're on Android, [Amethyst](https://amethyst.social/)
+and [Wisp](https://wisp.mobile/) are excellent choices too.
 
 **What is the second best nostr client?**
 🦚 This question is best answered by watching [this video](https://youtu.be/uDgnZn3SjLw).
@@ -195,17 +194,21 @@ It's still early days, so be prepared to get rekt.
 
 ## Clients
 
+If you want a simple recommendation, start with Primal or Damus. On Android,
+Amethyst and Wisp are excellent options too.
+
 Periodically check [nostr.net](https://www.nostr.net/) which keeps a curated
 list of clients or have a look at the [client comparison table](https://github.com/vishalxl/Nostr-Clients-Features-List).
 
 Mobile clients:
 
-- [Damus (iOS & Android)](https://damus.io/) - Twitter-style iOS/Android client, also works on MacOS[^fn-mac]
-- [Amethyst (Android)](https://www.amethyst.social/) - Twitter-style Android client
+- [Primal (Web, iOS & Android)](https://primal.net/downloads) - Smooth onboarding, built-in wallet, and solid defaults for newcomers
+- [Damus (iOS, Android & Web)](https://damus.io/) - Polished cross-platform client, also works on MacOS[^fn-mac]
+- [Amethyst (Android)](https://www.amethyst.social/) - Feature-rich Android client with a large user base
+- [Wisp (Android)](https://wisp.mobile/) - Fast, minimal Android client with a clean native feel
 - [Flotilla (Android)](https://play.google.com/store/apps/details?id=social.flotilla&hl=en_US) - DMs and group chats
 - [Nostur (iOS)](https://apps.apple.com/us/app/nostur/id1672780508) - native iOS/iPad client with MacOS[^fn-mac] version
 - [Openvibe (iOS & Android)](https://play.google.com/store/apps/details?id=com.plebstr.client) - Nostr, Threads, Bluesky, and Mastodon in one client.
-- [Primal (iOS & Android)](https://primal.net/downloads) - Clean & performant, but not very feature-rich (yet)
 - [Yakihonne (iOS & Android)](https://yakihonne.com/yakihonne-mobile-app) - Cross-platform Nostr client
 
 There are more native clients in development, Nostros[^nostros] and Voyage[^voyage] being two of them.
@@ -214,7 +217,7 @@ There are more native clients in development, Nostros[^nostros] and Voyage[^voya
 
 Web clients:
 
-- [primal.net](https://primal.net/) - Explore your tribe, network, and global trends
+- [primal.net](https://primal.net/) - One of the easiest web clients to start with, also available on iOS and Android
 - [phoenix.social](https://phoenix.social/) - Simple interface with automatic image-upload
 - [phoenix.deck](https://phoenix.social/deck) - A tweetdeck like version of the snort client.
 - [noStrudel](https://nostrudel.ninja/) - Supports many NIPs inc communities, streams, blogs and more
