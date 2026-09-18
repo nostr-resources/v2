@@ -1,0 +1,504 @@
+group_order:
+  - profile
+  - apps
+  - games
+  - media
+  - zaps
+  - stats
+  - search
+  - feeds
+  - bots
+  - development
+
+groups:
+  profile:
+    title:
+      en: Profile and key tools
+      de: Profil- und Schlussel-Tools
+  apps:
+    title:
+      en: Nostr apps
+      de: Nostr-Apps
+  games:
+    title:
+      en: Games
+      de: Spiele
+  media:
+    title:
+      en: Media hosting
+      de: Medienhosting
+  zaps:
+    title:
+      en: Zaps and wallets
+      de: Zaps und Wallets
+  stats:
+    title:
+      en: Stats
+      de: Statistiken
+  search:
+    title:
+      en: Search
+      de: Suche
+  feeds:
+    title:
+      en: Feeds and automation
+      de: Feeds und Automatisierung
+  bots:
+    title:
+      en: Bots
+      de: Bots
+  development:
+    title:
+      en: Development
+      de: Entwicklung
+
+items:
+  - name: Nostr Metadata
+    url: https://metadata.nostr.com/
+    group: profile
+    tags: [backup, profile, follows]
+    description:
+      en: Profile and following list backup tool
+      de: Backup-Tool fur Profil und Follower-Liste
+
+  - name: NostrSync
+    url: https://nostrsync.vercel.app/
+    group: profile
+    tags: [backup, profile, events]
+    description:
+      en: Back up profile data and Nostr events
+      de: Profil und Nostr-Events sichern
+
+  - name: Nostr Follows
+    url: https://follows.nostr.com/
+    group: profile
+    tags: [follows, recovery]
+    description:
+      en: Recover lost contacts and follows
+      de: Verlorene Kontakte und Follows wiederherstellen
+
+  - name: Nostr Delete
+    url: https://delete.nostr.com/
+    group: profile
+    tags: [delete, events]
+    description:
+      en: Request deletion of Nostr events from hosting relays
+      de: Loschanfrage fur Nostr-Events bei hostenden Relays
+
+  - name: Asknostr
+    url: https://asknostr.site
+    group: apps
+    tags: [qa, knowledge]
+    description:
+      en: Q&A platform
+      de: Q&A-Plattform
+
+  - name: Listr
+    url: https://listr.lol/
+    group: apps
+    tags: [lists]
+    description:
+      en: Create and manage lists for supporting Nostr apps
+      de: Listen fur unterstutzende Nostr-Apps erstellen und verwalten
+
+  - name: nosbin
+    url: https://nosbin.com/
+    group: apps
+    tags: [pastebin]
+    description:
+      en: Pastebin over Nostr
+      de: Pastebin uber Nostr
+
+  - name: Zap.Cooking
+    url: https://zap.cooking/
+    group: apps
+    tags: [recipes]
+    description:
+      en: Create, explore, or share recipes
+      de: Rezepte erstellen, entdecken oder teilen
+
+  - name: Badges
+    url: https://nostrsigil.com
+    group: apps
+    tags: [badges]
+    description:
+      en: Create badges and award them to friends or followers
+      de: Badges erstellen und an Freunde oder Follower vergeben
+
+  - name: Emojis
+    url: https://emojito.meme/
+    group: apps
+    tags: [emoji-packs]
+    description:
+      en: Create or use emoji packs supported by many clients
+      de: Emoji-Pakete erstellen oder nutzen, die viele Clients unterstutzen
+
+  - name: Pinja
+    url: https://www.yumyu.me/
+    group: apps
+    tags: [bookmarks]
+    description:
+      en: Pin URLs as bookmarks
+      de: URLs als Lesezeichen pinnen
+
+  - name: Lantern
+    url: https://chromewebstore.google.com/detail/lantern/jjoijlenmgefkaeiomoaelcljfibpcgh
+    group: apps
+    tags: [highlights, annotation]
+    description:
+      en: Highlight, annotate, and discuss anything on the web
+      de: Alles im Web hervorheben, annotieren und diskutieren
+
+  - name: Formstr
+    url: https://formstr.app/dashboard
+    group: apps
+    tags: [forms]
+    description:
+      en: Create custom or template forms
+      de: Individuelle oder Template-Formulare erstellen
+
+  - name: Plektos
+    url: https://plektos.app/
+    group: apps
+    tags: [meetups, events]
+    description:
+      en: Meetup and event calendar
+      de: Meetup- und Veranstaltungskalender
+
+  - name: Wikifreedia
+    url: https://wikifreedia.xyz/
+    group: apps
+    tags: [wiki, web-of-trust]
+    description:
+      en: Wikis on Nostr, filtered by your web of trust
+      de: Wikis auf Nostr, gefiltert nach deinem Web of Trust
+
+  - name: Boris
+    url: https://read.withboris.com/
+    group: apps
+    tags: [reader, highlights]
+    description:
+      en: Reader app focused on local, offline reading and shared highlights
+      de: Reader-App fur lokales, Offline-Lesen und geteilte Highlights
+
+  - name: Jester
+    url: https://jesterui.github.io/
+    group: games
+    tags: [chess]
+    description:
+      en: Chess over Nostr
+      de: Schach uber Nostr
+
+  - name: Flappy Nostrich
+    url: https://flappy-nostrich.vercel.app/
+    group: games
+    tags: [arcade]
+    description:
+      en: Navigate bitcoin price talk to find good content
+      de: Durch Bitcoin-Preisdiskussionen navigieren, um guten Content zu finden
+
+  - name: Word5
+    url: https://word5.otherstuff.ai/
+    group: games
+    tags: [word-game]
+    description:
+      en: Like Wordle, but on Nostr
+      de: Wie Wordle, aber auf Nostr
+
+  - name: Puzzl35
+    url: https://puzzl35.com/
+    group: games
+    tags: [puzzles]
+    description:
+      en: Turn photos and art into puzzles to share with friends
+      de: Fotos und Kunst in Puzzles zum Teilen mit Freunden verwandeln
+
+  - name: nostr.build
+    url: https://nostr.build/
+    group: media
+    tags: [images, media]
+    description:
+      en: Media hosting for Nostr users
+      de: Medienhosting fur Nostr-Nutzer
+
+  - name: imgbb.com
+    url: https://imgbb.com/
+    group: media
+    tags: [images]
+    description:
+      en: Image hosting
+      de: Bildhosting
+
+  - name: imgur
+    url: https://imgur.com/
+    group: media
+    tags: [images]
+    description:
+      en: Image hosting
+      de: Bildhosting
+
+  - name: postimages.org
+    url: https://postimages.org/
+    group: media
+    tags: [images]
+    description:
+      en: Image hosting
+      de: Bildhosting
+
+  - name: nostrcheck.me
+    url: https://nostrcheck.me/public/
+    group: media
+    tags: [images, media]
+    description:
+      en: Public media hosting
+      de: Offentliches Medienhosting
+
+  - name: blossomservers.com
+    url: https://blossomservers.com/
+    group: media
+    tags: [blossom, media]
+    description:
+      en: Rated and reviewed Blossom servers
+      de: Bewertete Blossom-Server
+
+  - name: Wallet of Satoshi
+    url: https://walletofsatoshi.com/
+    group: zaps
+    platforms: [iOS, Android]
+    tags: [custodial, lightning]
+    nips: [NIP-57]
+    description:
+      en: Mobile custodial Lightning wallet
+      de: Custodial Lightning-Wallet fur Mobilgerate
+
+  - name: Coinos
+    url: https://coinos.io/
+    group: zaps
+    platforms: [Web]
+    tags: [custodial, nwc]
+    nips: [NIP-57]
+    description:
+      en: Web wallet with Nostr Wallet Connect capabilities
+      de: Web-Wallet mit Nostr Wallet Connect
+
+  - name: Primal
+    url: https://primal.net/home
+    group: zaps
+    platforms: [iOS, Android, Web]
+    tags: [custodial, lightning, client]
+    nips: [NIP-57]
+    description:
+      en: Nostr client with built-in Bitcoin wallet
+      de: Nostr-Client mit integrierter Bitcoin-Wallet
+
+  - name: Rizful
+    url: https://rizful.com/
+    group: zaps
+    tags: [lightning, nwc]
+    nips: [NIP-57]
+    description:
+      en: Nostr Wallet Connect capable Lightning wallet
+      de: Lightning-Wallet mit Nostr Wallet Connect
+
+  - name: Minibits
+    url: https://www.minibits.cash/
+    group: zaps
+    platforms: [Android]
+    tags: [cashu, ecash]
+    description:
+      en: Android native Cashu wallet
+      de: Android-native Cashu-Wallet
+
+  - name: Cashu.me
+    url: https://wallet.cashu.me/welcome
+    group: zaps
+    platforms: [PWA, iOS, Android]
+    tags: [cashu, ecash]
+    description:
+      en: Cashu PWA for iOS and Android
+      de: Cashu-PWA fur iOS und Android
+
+  - name: Macadamia
+    url: https://macadamia.cash/
+    group: zaps
+    platforms: [iOS]
+    tags: [cashu, ecash]
+    description:
+      en: iOS native Cashu wallet
+      de: iOS-native Cashu-Wallet
+
+  - name: Zeus
+    url: https://zeusln.app/
+    group: zaps
+    tags: [self-custody, lightning]
+    description:
+      en: Self-custodial Lightning wallet
+      de: Self-custodial Lightning-Wallet
+
+  - name: Alby Hub
+    url: https://blog.getalby.com/what-is-alby-hub/
+    group: zaps
+    tags: [self-custody, lightning, nwc]
+    description:
+      en: Self-custodial Lightning wallet and Nostr Wallet Connect hub
+      de: Self-custodial Lightning-Wallet und Nostr Wallet Connect Hub
+
+  - name: npub.world
+    url: https://npub.world/stats
+    group: stats
+    tags: [stats]
+    description:
+      en: Nostr statistics
+      de: Nostr-Statistiken
+
+  - name: nostr stats
+    url: https://stats.andotherstuff.org/
+    group: stats
+    tags: [stats]
+    description:
+      en: Nostr statistics
+      de: Nostr-Statistiken
+
+  - name: nashboard.space
+    url: https://nashboard.space/
+    group: stats
+    tags: [stats]
+    description:
+      en: Nostr dashboard and statistics
+      de: Nostr-Dashboard und Statistiken
+
+  - name: ants
+    url: https://ants.sh/
+    group: search
+    tags: [search]
+    description:
+      en: Search for Nostr content
+      de: Nostr-Inhalte suchen
+
+  - name: nos.today
+    url: https://nos.today
+    group: search
+    tags: [search]
+    description:
+      en: Search for Nostr content
+      de: Nostr-Inhalte suchen
+
+  - name: npub.world
+    url: https://npub.world/
+    group: search
+    tags: [search, people]
+    description:
+      en: Search for people and profiles
+      de: Menschen und Profile suchen
+
+  - name: nosey
+    url: https://nosey.vercel.app/
+    group: search
+    tags: [search]
+    description:
+      en: Search for Nostr content and hashtags
+      de: Nostr-Inhalte und Hashtags suchen
+
+  - name: Noogle
+    url: https://noogle.lol/
+    group: search
+    tags: [search, dvm]
+    description:
+      en: Search-capable DVM
+      de: DVM mit Suchfunktionen
+
+  - name: Narr
+    url: https://github.com/fiatjaf/narr
+    group: feeds
+    tags: [rss, feeds]
+    description:
+      en: Web-based Nostr feed aggregator and RSS reader
+      de: Webbasierter Nostr-Feed-Aggregator und RSS-Reader
+
+  - name: Noflux
+    url: https://github.com/fiatjaf/noflux
+    group: feeds
+    tags: [rss, feeds]
+    description:
+      en: RSS and feed tooling
+      de: RSS- und Feed-Werkzeug
+
+  - name: castr.me
+    url: http://castr.me/
+    group: feeds
+    tags: [podcast, rss]
+    description:
+      en: Generate a podcast feed from any npub
+      de: Podcast-Feed aus jedem npub generieren
+
+  - name: Gitworkshop
+    url: https://gitworkshop.dev/
+    group: development
+    tags: [code, collaboration]
+    description:
+      en: Code collaboration over Nostr
+      de: Code-Zusammenarbeit uber Nostr
+
+  - name: How to build a nostr gm bot
+    url: https://dergigi.com/2023/01/19/how-to-build-a-nostr-gm-bot/
+    group: bots
+    tags: [bots, guide]
+    description:
+      en: Guide to building a Nostr bot
+      de: Anleitung zum Bau eines Nostr-Bots
+
+  - name: nostr_bot
+    url: https://docs.rs/nostr-bot/latest/nostr_bot/
+    group: bots
+    tags: [bots, rust]
+    description:
+      en: Rust crate for Nostr bots
+      de: Rust-Crate fur Nostr-Bots
+
+  - name: nostr GPT bot
+    url: https://github.com/Marfusios/nostr-client/tree/master/apps/nostr-bot
+    group: bots
+    tags: [bots, ai]
+    description:
+      en: GPT bot for Nostr
+      de: GPT-Bot fur Nostr
+
+  - name: NIPs
+    url: https://github.com/nostr-protocol/nips
+    group: development
+    tags: [protocol, specs]
+    description:
+      en: Nostr Implementation Possibilities
+      de: Nostr Implementation Possibilities
+
+  - name: Kind Registry
+    url: https://nostr-protocol.github.io/registry-of-kinds/
+    group: development
+    tags: [protocol, registry]
+    description:
+      en: Registry of Nostr event kinds
+      de: Registry der Nostr-Event-Kinds
+
+  - name: Documentation Registry
+    url: https://nostrbook.dev/
+    group: development
+    tags: [docs, protocol]
+    description:
+      en: Documentation registry for Nostr
+      de: Dokumentations-Registry fur Nostr
+
+  - name: HelloNostrDocs
+    url: https://hellonostr.dev/en/
+    group: development
+    tags: [docs, builders]
+    description:
+      en: Beginner-friendly guide to Nostr development
+      de: Einsteigerfreundlicher Leitfaden fur Nostr-Entwicklung
+
+  - name: NostrDesign
+    url: https://nostrdesign.org/
+    group: development
+    tags: [design, builders]
+    description:
+      en: Design resources for Nostr builders
+      de: Design-Ressourcen fur Nostr-Builder

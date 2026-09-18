@@ -1,13 +1,23 @@
 nav_download: Download
 nav_clients: Clients
+nav_relays: Relays
+nav_tools: Tools
 nav_learn: Learn
 nav_tips: Tips
 nav_faq: FAQ
+nav_download_anchor: "#get-started"
+nav_learn_anchor: "#learn-more"
+nav_tips_anchor: "#tips--tricks"
+nav_faq_anchor: "#faq"
 toc_title: Table of Contents
 clients_directory: Client directory
 clients_platforms: Platforms
 clients_use_cases: Use cases
 clients_nips: NIPs
+resources_directory: Resource directory
+resources_platforms: Platforms
+resources_tags: Tags
+resources_nips: NIPs
 footer_license: >-
   Except where otherwise noted, content on this site is licensed under a
   Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.

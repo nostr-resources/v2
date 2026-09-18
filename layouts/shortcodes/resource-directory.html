@@ -1,0 +1,51 @@
+{{- $dataset := .Get "data" -}}
+{{- $data := index site.Data $dataset -}}
+{{- $lang := .Page.Lang -}}
+{{- if not $data -}}
+  {{- errorf "Missing resource data file: %s" $dataset -}}
+{{- end -}}
+<section class="resource-directory" aria-label="{{ i18n "resources_directory" }}">
+  {{- range $groupID := $data.group_order }}
+  {{- $group := index $data.groups $groupID -}}
+  {{- $items := where $data.items "group" $groupID -}}
+  <section class="resource-group" id="{{ $groupID }}">
+    <h2>{{ index $group.title $lang | default (index $group.title "en") }}</h2>
+    <div class="resource-card-grid">
+      {{- range $items }}
+      {{- $description := index .description $lang | default (index .description "en") -}}
+      <article class="resource-card">
+        <h3>
+          {{- if .url -}}
+          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+          {{- else -}}
+          {{ .name }}
+          {{- end -}}
+        </h3>
+        {{ with $description }}<p>{{ . | markdownify }}</p>{{ end }}
+        <dl>
+          {{ with .platforms }}
+          <div>
+            <dt>{{ i18n "resources_platforms" }}</dt>
+            <dd>{{ delimit . ", " }}</dd>
+          </div>
+          {{ end }}
+          {{ with .tags }}
+          <div>
+            <dt>{{ i18n "resources_tags" }}</dt>
+            <dd>{{ delimit . ", " }}</dd>
+          </div>
+          {{ end }}
+          {{ with .nips }}
+          <div>
+            <dt>{{ i18n "resources_nips" }}</dt>
+            <dd>{{ delimit . ", " }}</dd>
+          </div>
+          {{ end }}
+        </dl>
+      </article>
+      {{- end }}
+    </div>
+  </section>
+  {{- end }}
+</section>
+

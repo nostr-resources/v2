@@ -1,0 +1,98 @@
+group_order:
+  - directories
+  - run
+  - paid
+  - unique
+
+groups:
+  directories:
+    title:
+      en: Relay directories
+      de: Relay-Verzeichnisse
+  run:
+    title:
+      en: Run your own
+      de: Eigenes Relay betreiben
+  paid:
+    title:
+      en: Paid relays
+      de: Kostenpflichtige Relays
+  unique:
+    title:
+      en: Unique relays
+      de: Besondere Relays
+
+items:
+  - name: nostr.watch
+    url: http://nostr.watch/
+    group: directories
+    tags: [directory, public-relays]
+    description:
+      en: Directory of paid and free relays
+      de: Verzeichnis von kostenpflichtigen und kostenlosen Relays
+
+  - name: nostr.info relays
+    url: https://nostr.info/relays/
+    group: directories
+    tags: [directory, public-relays]
+    description:
+      en: Directory of known Nostr relays
+      de: Verzeichnis bekannter Nostr-Relays
+
+  - name: relay.tools
+    url: https://relay.tools/
+    group: directories
+    tags: [directory, public-relays]
+    description:
+      en: Public relay browser
+      de: Offentlicher Relay-Browser
+
+  - name: Nostr Relay server guide
+    url: https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under
+    group: run
+    tags: [guide, self-hosting]
+    description:
+      en: Set up a Nostr relay server in under 5 minutes
+      de: Nostr Relay Server in unter 5 Minuten aufsetzen
+
+  - name: Citrine
+    url: https://github.com/greenart7c3/Citrine?tab=readme-ov-file#download
+    group: run
+    platforms: [Android]
+    tags: [personal-relay, mobile]
+    description:
+      en: Native personal relay for Android
+      de: Natives personliches Relay fur Android
+
+  - name: nostr-relay-tray
+    url: https://github.com/CodyTseng/nostr-relay-tray/releases
+    group: run
+    platforms: [Desktop]
+    tags: [local-relay]
+    description:
+      en: Simple local relay for your desktop
+      de: Einfaches lokales Relay fur deinen Desktop
+
+  - name: Pyramid
+    url: https://github.com/fiatjaf/pyramid
+    group: run
+    tags: [community-relay, self-hosting]
+    description:
+      en: Host a powerful community relay with many features on a cheap VPS
+      de: Leistungsfahiges Community-Relay mit vielen Features auf einem gunstigen VPS hosten
+
+  - name: Paid relays
+    group: paid
+    tags: [spam-reduction, sats]
+    description:
+      en: Paid relays can reduce spam by charging users a small usage fee in sats
+      de: Kostenpflichtige Relays konnen Spam reduzieren, indem sie kleine Nutzungsgebuhren in Sats verlangen
+
+  - name: Curated relay feeds
+    url: https://jumble.social/?r=relays.land/spatianostra
+    group: unique
+    tags: [curation, feeds, communities]
+    description:
+      en: Relays can curate content, unlock new interactions, and host communities or groups
+      de: Relays konnen Inhalte kuratieren, neue Interaktionen ermoglichen und Communities oder Gruppen beherbergen
+

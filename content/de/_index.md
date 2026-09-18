@@ -234,16 +234,11 @@ Relays sind einfache Server, die du jederzeit hinter dir lassen kannst ([sie kö
 böse werden](https://youtu.be/5FbgDUQjziM)). Du musst deinen Client mit einem Relay verbinden, damit er funktioniert. Es gibt
 viele Relays und du kannst dein eigenes betreiben. Schau dir [dieses Video](https://youtu.be/TFH7Xr0cJ0w) an für eine kurze Anleitung zur Relay-Verwaltung.
 
-- [nostr.watch](http://nostr.watch/) - Verzeichnis von kostenpflichtigen und kostenlosen Relays
-- [nostr.info](https://nostr.info/relays/) - Verzeichnis bekannter nostr-Relays
-- [relay.tools](https://relay.tools/) - öffentlicher Relay-Browser
+{{< resource-group data="relays" group="directories" >}}
 
 Eigenes Relay betreiben:
 
-- [Nostr Relay Server in unter 5 Minuten aufsetzen](https://andreneves.xyz/p/set-up-a-nostr-relay-server-in-under)[^fn-fork]
-- Ein natives, persönliches Relay auf Android betreiben mit [Citrine](https://github.com/greenart7c3/Citrine?tab=readme-ov-file#download)
-- [nostr-relay-tray](https://github.com/CodyTseng/nostr-relay-tray/releases) installieren für ein einfaches, lokales Relay auf deinem Desktop
-- Ein leistungsfähiges Community-Relay mit vielen Features auf einem günstigen VPS hosten mit [Pyramid](https://github.com/fiatjaf/pyramid)
+{{< resource-group data="relays" group="run" >}}
 
 Kostenpflichtige Relays:
 
@@ -251,46 +246,30 @@ Kostenpflichtige Relays bekämpfen Spam effektiv, indem sie den Nutzern eine kle
 Sats berechnen. Du kannst deinen globalen Feed auf kostenpflichtige Relays beschränken, was
 fast allen Spam eliminiert.
 
-[^fn-fork]: Fork mit kleinen Änderungen/Fixes: [Install a nostr relay](https://www.massmux.com/install-a-nostr-relay/)
+{{< resource-group data="relays" group="paid" >}}
 
 Besondere Relays:
 
 Relays können auch als [Inhaltskuratoren](https://youtu.be/CL34LnBs0OQ) fungieren, verschiedene Interaktionsmöglichkeiten freischalten, die Heimat von Communities oder Gruppen sein, und mehr.
 Hier ein Beispiel für einen menschlich kuratierten Feed: [Link](https://jumble.social/?r=relays.land/spatianostra).
 
+{{< resource-group data="relays" group="unique" >}}
+
 ## Tools
 
 Die Verwaltung deiner nostr-Schlüssel UND deines Profils ist genauso wichtig wie das Sichern deiner privaten Schlüssel für Bitcoin!
 
-- [Nostr Metadata](https://metadata.nostr.com/) - ein Backup-Tool für Profil und Follower-Liste.
-- [NostrSync](https://nostrsync.vercel.app/) - ein weiterer Dienst zum Backup von Profil UND nostr-Events.
-- [Nostr Follows](https://follows.nostr.com/) - verlorene Kontakte/Follows wiederherstellen.
-- [Nostr Delete](https://delete.nostr.com/) - Löschanfrage für nostr-Events bei den hostenden Relays.
+{{< resource-group data="tools" group="profile" >}}
 
 nostr kann mehr als nur Social Media.
 
-- [Asknostr](https://asknostr.site) - Q&A-Plattform (Alternative zu Quora/StackOverflow)
-- [Listr](https://listr.lol/) - Listen erstellen und verwalten für unterstützende nostr-Apps.
-- [nosbin](https://nosbin.com/) - Pastebin über nostr.
-- [Zap.Cooking](https://zap.cooking/) - Rezepte erstellen, entdecken oder teilen.
-- [Badges](https://nostrsigil.com) - Badges erstellen und an Freunde oder Follower vergeben.
-- [Emojis](https://emojito.meme/) - Emoji-Pakete erstellen oder nutzen, die von den meisten nostr-Clients unterstützt werden.
-- [Pinja](https://www.yumyu.me/) - URLs als Lesezeichen pinnen.
-- [Lantern](https://chromewebstore.google.com/detail/lantern/jjoijlenmgefkaeiomoaelcljfibpcgh) - Hervorheben, annotieren und diskutieren von allem im Web.
-- [Formstr](https://formstr.app/dashboard) - individuelle oder Template-Formulare erstellen, überall zugänglich.
-- [Gitworkshop](https://gitworkshop.dev/) - Code-Zusammenarbeit über nostr.
-- [Plektos](https://plektos.app/) - Meetup- und Veranstaltungskalender.
-- [Wikifreedia](https://wikifreedia.xyz/) - Wikis auf nostr, gefiltert nach deinem Web of Trust. Oder nicht.
-- [Boris](https://read.withboris.com/) - eine vollständige Leser-App, mit Fokus auf lokales, Offline-Lesen und das Teilen von Highlights.
+{{< resource-group data="tools" group="apps" >}}
 
 ## Games
 
 Spiele? WTF? Ja, Spiele:
 
-- [Jester](https://jesterui.github.io/) - Schach über nostr von theborakompanioni
-- [Flappy Nostrich](https://flappy-nostrich.vercel.app/) - Navigiere durch Bitcoin-Preisdiskussionen, um guten Content zu finden
-- [Word5](https://word5.otherstuff.ai/) - Wie Wordle, aber auf nostr
-- [Puzzl35](https://puzzl35.com/) - Verwandle deine Fotos und Kunst in Puzzles zum Teilen mit Freunden
+{{< resource-group data="tools" group="games" >}}
 
 ---
 
@@ -319,11 +298,7 @@ Das funktioniert auch für Videos.
 
 Hier sind einige kostenlose Bildhoster:
 
-- [nostr.build](https://nostr.build/)
-- [imgbb.com](https://imgbb.com/)
-- [imgur](https://imgur.com/)
-- [postimages.org](https://postimages.org/)
-- [nostrcheck.me](https://nostrcheck.me/public/)
+{{< resource-group data="tools" group="media" >}}
 
 [Blossom](https://github.com/hzrd149/blossom) nutzt nostr, um Medienhosting zu dezentralisieren.
 Falls dein bevorzugter Social Client Blossom unterstützt, schau dir [blossomservers.com](https://blossomservers.com/)
@@ -364,24 +339,13 @@ Notes anzeigen können.
 Um Zaps zu empfangen, brauchst du ein Lightning-Wallet, das
 [NIP-57](https://github.com/nostr-protocol/nips/blob/master/57.md) unterstützt.
 
-Beliebte custodiale Lösungen sind:
+Wallets und Zap-Werkzeuge:
 
-- [Wallet of Satoshi](https://walletofsatoshi.com/) - empfohlen für Mobilgeräte (nicht überall verfügbar)
-- [Coinos](https://coinos.io/) - ein Web-Wallet mit Nostr Wallet Connect Funktionen
-- [Primal](https://primal.net/home) - nostr-Client mit integriertem Bitcoin-Wallet für iOS, Android und Web
-- [Rizful](https://rizful.com/) - einfach zu bedienendes Lightning-Wallet mit Nostr Wallet Connect
+{{< resource-group data="tools" group="zaps" >}}
 
-Das Cashu-Protokoll bringt Bitcoin-gedecktes Ecash zu custodialen Nostr-Zaps und darüber hinaus. Es ist noch recht neu (also experimentell). Mehr dazu findest du [hier](https://cashu.space/). Ein paar nette Wallets zum Ausprobieren:
-
-- [Minibits](https://www.minibits.cash/) - Android-nativ
-- [Cashu.me](https://wallet.cashu.me/welcome) - PWA für iOS und Android
-- [Macadamia](https://macadamia.cash/) - iOS-nativ
+Das Cashu-Protokoll bringt Bitcoin-gedecktes Ecash zu custodialen Nostr-Zaps und darüber hinaus. Es ist noch recht neu (also experimentell). Mehr dazu findest du [hier](https://cashu.space/).
 
 Ecash-Mints und Bewertungen findest du auf [bitcoinmints.com](https://bitcoinmints.com/?tab=mints).
-
-Self-custodial Lösungen:
-- [Zeus](https://zeusln.app/)
-- [Alby Hub](https://blog.getalby.com/what-is-alby-hub/)
 
 ### Erwähnungen & Deep Links
 
@@ -409,9 +373,7 @@ Es gibt sogar ein [Weiterleitungs-Tool](https://nostredirect.davidcoen.it/); Dan
 Als [Jack](https://twitter.com/jack/status/1603945963944480768) beitrat
 (und einige nostr-Entwickler finanzierte), nahm das allgemeine Interesse an nostr Fahrt auf und wächst seitdem. Genaue Statistiken sind bei einem dezentralen Protokoll schwer zu erfassen, aber hier sind einige gute Beispiele:
 
-- [npub.world](https://npub.world/stats)
-- [nostr stats](https://stats.andotherstuff.org/)
-- [nashboard.space](https://nashboard.space/)
+{{< resource-group data="tools" group="stats" >}}
 
 ## Sats
 
@@ -423,26 +385,16 @@ den Betrag und einen Bezahl-Button an. Ein solcher Client ist Damus, der ein sch
 
 Die meisten Clients unterstützen einfache Suche, aber es gibt auch:
 
-- [ants🐜](https://ants.sh/)
-- [nos.today](https://nos.today)
-- [npub.world](https://npub.world/)
-- [nosey](https://nosey.vercel.app/)
-
-Einige DVMs, wie [Noogle](https://noogle.lol/), haben ebenfalls Suchfunktionen.
+{{< resource-group data="tools" group="search" >}}
 
 ### Bots
 
-- [Wie man einen nostr GM-Bot baut](https://dergigi.com/2023/01/19/how-to-build-a-nostr-gm-bot/) von Gigi
-- [nostr_bot](https://docs.rs/nostr-bot/latest/nostr_bot/) Rust-Crate
-- [nostr GPT bot](https://github.com/Marfusios/nostr-client/tree/master/apps/nostr-bot) Ein GPT 3.5 Bot für nostr.
+{{< resource-group data="tools" group="bots" >}}
 
 ### RSS
 
 Du kannst auch einen RSS-Feed auf nostr erstellen, indem du [dieser Anleitung](https://habla.news/a/naddr1qvzqqqr4gupzp89qh469qapddgsrr8qw84xx08y7q34fm3cw3m64c2g9ufq9ydqtqyghwumn8ghj7mn0wd68ytnhd9hx2tcqzpkngat8w4nhzve3ve6k2d3hvyus88uu4f) folgst.
-[Narr](https://github.com/fiatjaf/narr) ist ein webbasierter nostr-Feed-Aggregator und RSS-Reader.
-Es gibt auch [Noflux](https://github.com/fiatjaf/noflux).
-
-Du kannst automatisch einen Podcast-Feed aus jedem npub generieren mit [castr.me](http://castr.me/).
+{{< resource-group data="tools" group="feeds" >}}
 
 ## Bücher
 
@@ -523,9 +475,7 @@ Du bist herzlich eingeladen, Bugs zu melden und Pull Requests zu erstellen!
 
 nostr-Protokoll:
 
-- [NIPs](https://github.com/nostr-protocol/nips)
-- [Kind Registry](https://nostr-protocol.github.io/registry-of-kinds/)
-- [Documentation Registry](https://nostrbook.dev/)
+{{< resource-group data="tools" group="development" >}}
 
 Schau dir [awesome-nostr](https://github.com/aljazceru/awesome-nostr) an für Links zu weiteren Clients, Bibliotheken, Relay-Implementierungen und verwandten Projekten.
 

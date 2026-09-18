@@ -1,0 +1,22 @@
+{{- $dataset := .Get "data" -}}
+{{- $group := .Get "group" -}}
+{{- $data := index site.Data $dataset -}}
+{{- $lang := .Page.Lang -}}
+{{- if not $data -}}
+  {{- errorf "Missing resource data file: %s" $dataset -}}
+{{- end -}}
+{{- $items := where $data.items "group" $group -}}
+<ul class="resource-list">
+  {{- range $items }}
+  {{- $description := index .description $lang | default (index .description "en") -}}
+  <li>
+    {{- if .url -}}
+    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}</a>
+    {{- else -}}
+    {{ .name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}
+    {{- end -}}
+    {{ with $description }} - {{ . | markdownify }}{{ end }}
+  </li>
+  {{- end }}
+</ul>
+
