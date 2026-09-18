@@ -1,0 +1,304 @@
+group_order:
+  - mobile
+  - web
+  - creator
+  - desktop
+
+groups:
+  mobile:
+    title:
+      en: Mobile clients
+      de: Mobile Clients
+  web:
+    title:
+      en: Web clients
+      de: Web-Clients
+  creator:
+    title:
+      en: Web clients for content creators
+      de: Web-Clients für Content-Ersteller
+  desktop:
+    title:
+      en: Desktop clients
+      de: Desktop-Clients
+
+clients:
+  - name: Primal
+    url: https://primal.net/downloads
+    group: mobile
+    platforms: [Web, iOS, Android]
+    recommended_for: [newcomers, social, zaps]
+    description:
+      en: Smooth onboarding, built-in wallet, and solid defaults for newcomers
+      de: Sanfter Einstieg, eingebaute Wallet und gute Standard-Einstellungen für Neulinge
+
+  - name: Damus
+    url: https://damus.io/
+    group: mobile
+    platforms: [iOS, Android, Web, macOS]
+    recommended_for: [social, mobile]
+    description:
+      en: Polished cross-platform client
+      de: Polierter plattformübergreifender Client
+
+  - name: Amethyst
+    url: https://www.amethyst.social/
+    group: mobile
+    platforms: [Android]
+    recommended_for: [android, power-users]
+    description:
+      en: Feature-rich Android client with a large user base
+      de: Funktionsreicher Android-Client mit großer Nutzerbasis
+
+  - name: Wisp
+    url: https://wisp.mobile/
+    group: mobile
+    platforms: [Android]
+    recommended_for: [android, minimal]
+    description:
+      en: Fast, minimal Android client with a clean native feel
+      de: Schneller, minimalistischer Android-Client mit nativer Oberfläche
+
+  - name: Flotilla
+    url: https://play.google.com/store/apps/details?id=social.flotilla&hl=en_US
+    group: mobile
+    platforms: [Android]
+    recommended_for: [dms, groups]
+    description:
+      en: DMs and group chats
+      de: DMs und Gruppenchats
+
+  - name: Nostur
+    url: https://apps.apple.com/us/app/nostur/id1672780508
+    group: mobile
+    platforms: [iOS, iPadOS, macOS]
+    recommended_for: [ios, native]
+    description:
+      en: Native iOS and iPad client with macOS version
+      de: Nativer iOS- und iPad-Client mit macOS-Version
+
+  - name: Openvibe
+    url: https://play.google.com/store/apps/details?id=com.plebstr.client
+    group: mobile
+    platforms: [iOS, Android]
+    recommended_for: [multi-protocol]
+    description:
+      en: Nostr, Threads, Bluesky, and Mastodon in one client
+      de: Nostr, Threads, Bluesky und Mastodon in einem Client
+
+  - name: Yakihonne
+    url: https://yakihonne.com/yakihonne-mobile-app
+    group: mobile
+    platforms: [iOS, Android]
+    recommended_for: [mobile, long-form]
+    description:
+      en: Cross-platform Nostr client
+      de: Plattformübergreifender Nostr-Client
+
+  - name: primal.net
+    url: https://primal.net/
+    group: web
+    platforms: [Web, iOS, Android]
+    recommended_for: [newcomers, social]
+    description:
+      en: One of the easiest web clients to start with, also available on iOS and Android
+      de: Einer der einfachsten Web-Clients für den Einstieg, auch auf iOS und Android verfügbar
+
+  - name: phoenix.social
+    url: https://phoenix.social/
+    group: web
+    platforms: [Web]
+    recommended_for: [social, media]
+    description:
+      en: Simple interface with automatic image upload
+      de: Einfache Oberfläche mit automatischem Bild-Upload
+
+  - name: phoenix.deck
+    url: https://phoenix.social/deck
+    group: web
+    platforms: [Web]
+    recommended_for: [power-users, columns]
+    description:
+      en: A deck-style version of the Snort client
+      de: Eine Deck-Ansicht des Snort-Clients
+
+  - name: noStrudel
+    url: https://nostrudel.ninja/
+    group: web
+    platforms: [Web]
+    recommended_for: [power-users, communities, streams]
+    description:
+      en: Supports many NIPs including communities, streams, blogs, and more
+      de: Unterstützt viele NIPs, inklusive Communities, Streams, Blogs und mehr
+
+  - name: coracle.social
+    url: https://coracle.social/
+    group: web
+    platforms: [Web]
+    recommended_for: [search, filters]
+    description:
+      en: Search, filters, and micro-apps
+      de: Suche, Filter und Micro-Apps
+
+  - name: jumble
+    url: https://jumble.social/
+    group: web
+    platforms: [Web]
+    recommended_for: [relays, feeds]
+    description:
+      en: Explore content feeds by relay and create custom relay sets
+      de: Entdecke Content-Feeds nach Relay und erstelle eigene Relay-Sets
+
+  - name: iris.to
+    url: https://iris.to/
+    group: web
+    platforms: [Web]
+    recommended_for: [social]
+    description:
+      en: Clean interface and rich in features
+      de: Saubere Oberfläche und reich an Funktionen
+
+  - name: x21
+    url: https://x21.social/
+    group: web
+    platforms: [Web]
+    recommended_for: [social]
+    description:
+      en: Clean interface
+      de: Saubere Oberfläche
+
+  - name: nostria
+    url: https://nostria.app/
+    group: web
+    platforms: [Web]
+    recommended_for: [relays, topics, music]
+    description:
+      en: Explore relay feeds, topics, music, and more
+      de: Entdecke Relay-Feeds, Themen, Musik und mehr
+
+  - name: grimoire
+    url: https://grimoire.rocks/
+    group: web
+    platforms: [Web]
+    recommended_for: [social]
+    description:
+      en: A Nostr client for magicians
+      de: Ein Nostr-Client für Magier
+
+  - name: ZapStream
+    url: https://zap.stream/
+    group: creator
+    platforms: [Web]
+    recommended_for: [streaming, zaps]
+    description:
+      en: Streaming on Nostr allows for instant monetization of content
+      de: Streaming auf Nostr ermöglicht sofortige Monetarisierung von Inhalten
+
+  - name: Habla
+    url: https://habla.news/
+    group: creator
+    platforms: [Web]
+    recommended_for: [long-form, publishing]
+    description:
+      en: Long-form posts on Nostr
+      de: Langform-Beiträge auf Nostr
+
+  - name: yakihonne
+    url: https://yakihonne.com/
+    group: creator
+    platforms: [Web]
+    recommended_for: [long-form, publishing]
+    description:
+      en: Long-form posts on Nostr
+      de: Langform-Beiträge auf Nostr
+
+  - name: Highlighter
+    url: https://highlighter.com/
+    group: creator
+    platforms: [Web]
+    recommended_for: [reading, highlights]
+    description:
+      en: Client focused on reading and highlighting long-form content
+      de: Client zum Lesen und Hervorheben von Langform-Inhalten
+
+  - name: Shipyard
+    url: https://shipyard.pub/
+    group: creator
+    platforms: [Web]
+    recommended_for: [scheduling, publishing]
+    description:
+      en: Write, schedule, and boost your notes
+      de: Schreibe, plane und booste deine Notes
+
+  - name: Wavlake
+    url: https://www.wavlake.com/
+    group: creator
+    platforms: [Web]
+    recommended_for: [music, zaps]
+    description:
+      en: A music platform similar to Spotify
+      de: Eine Musikplattform ähnlich wie Spotify
+
+  - name: Satellite.earth
+    url: https://satellite.earth/
+    group: creator
+    platforms: [Web]
+    recommended_for: [reading, media]
+    description:
+      en: Reddit-like reading experience with CDN media hosting and other Nostr services
+      de: Reddit-ähnliche Leseerfahrung mit CDN-Medienhosting und weiteren Nostr-Diensten
+
+  - name: Npub.pro
+    url: https://npub.pro/
+    group: creator
+    platforms: [Web]
+    recommended_for: [websites, profiles]
+    description:
+      en: Nostr-based websites to showcase creator content
+      de: Nostr-basierte Websites zur Präsentation von Creator-Inhalten
+
+  - name: Pidgeon
+    url: https://pidgeon.lol/
+    group: creator
+    platforms: [Web]
+    recommended_for: [scheduling, publishing]
+    description:
+      en: Compose and schedule notes
+      de: Verfasse und plane Notes
+
+  - name: Goop
+    url: https://goop.dergigi.com/
+    group: desktop
+    platforms: [macOS, Windows, Linux]
+    nips: [NIP-17]
+    recommended_for: [direct-messages, privacy]
+    description:
+      en: Native NIP-17 direct-message client
+      de: Nativer NIP-17-Direktnachrichten-Client
+
+  - name: Gossip
+    url: https://github.com/mikedilger/gossip
+    group: desktop
+    platforms: [Linux, macOS, Windows]
+    recommended_for: [privacy, moderation, power-users]
+    description:
+      en: Advanced, privacy-conscious desktop client with multi-relay support and secure key handling
+      de: Fortschrittlicher, datenschutzbewusster Desktop-Client mit Multi-Relay-Unterstützung und sicherer Schlüsselverwaltung
+
+  - name: Notedeck
+    url: https://damus.io/notedeck/
+    group: desktop
+    platforms: [Desktop]
+    recommended_for: [multi-account, native]
+    description:
+      en: Fast, native, multi-account desktop client from the Damus team
+      de: Schneller, nativer Multi-Account-Desktop-Client vom Damus-Team
+
+  - name: more-speech
+    url: https://github.com/unclebob/more-speech
+    group: desktop
+    platforms: [Desktop]
+    recommended_for: [moderation, curation, relays]
+    description:
+      en: Clojure-based desktop client focused on moderation, curation, and relay management
+      de: Clojure-basierter Desktop-Client für Moderation, Kuratierung und Relay-Verwaltung

@@ -202,14 +202,7 @@ list of clients or have a look at the [client comparison table](https://github.c
 
 Mobile clients:
 
-- [Primal (Web, iOS & Android)](https://primal.net/downloads) - Smooth onboarding, built-in wallet, and solid defaults for newcomers
-- [Damus (iOS, Android & Web)](https://damus.io/) - Polished cross-platform client, also works on MacOS[^fn-mac]
-- [Amethyst (Android)](https://www.amethyst.social/) - Feature-rich Android client with a large user base
-- [Wisp (Android)](https://wisp.mobile/) - Fast, minimal Android client with a clean native feel
-- [Flotilla (Android)](https://play.google.com/store/apps/details?id=social.flotilla&hl=en_US) - DMs and group chats
-- [Nostur (iOS)](https://apps.apple.com/us/app/nostur/id1672780508) - native iOS/iPad client with MacOS[^fn-mac] version
-- [Openvibe (iOS & Android)](https://play.google.com/store/apps/details?id=com.plebstr.client) - Nostr, Threads, Bluesky, and Mastodon in one client.
-- [Yakihonne (iOS & Android)](https://yakihonne.com/yakihonne-mobile-app) - Cross-platform Nostr client
+{{< clients-group group="mobile" >}}
 
 There are more native clients in development, Nostros[^nostros] and Voyage[^voyage] being two of them.
 
@@ -217,16 +210,7 @@ There are more native clients in development, Nostros[^nostros] and Voyage[^voya
 
 Web clients:
 
-- [primal.net](https://primal.net/) - One of the easiest web clients to start with, also available on iOS and Android
-- [phoenix.social](https://phoenix.social/) - Simple interface with automatic image-upload
-- [phoenix.deck](https://phoenix.social/deck) - A tweetdeck like version of the snort client.
-- [noStrudel](https://nostrudel.ninja/) - Supports many NIPs inc communities, streams, blogs and more
-- [coracle.social](https://coracle.social/) - Search, filters, and micro-apps
-- [jumble](https://jumble.social/) - Explore content feeds by relay and create custom relay sets
-- [iris.to](https://iris.to/) - Clean interface & rich in features
-- [x21](https://x21.social/) - Clean interface
-- [nostria](https://nostria.app/) - Explore relay feeds, topics, music, and more
-- [grimoire](https://grimoire.rocks/) - A nostr client for magicians
+{{< clients-group group="web" >}}
 
 On Android you can use the [Kiwi Browser](https://kiwibrowser.com/) to use the
 [Alby](https://getalby.com) or [nos2x](https://github.com/fiatjaf/nos2x)
@@ -244,21 +228,11 @@ stuff.
 
 Web clients for content creators:
 
-- [ZapStream](https://zap.stream/) - Streaming on nostr allows for instant monetarisation of content.
-- [Habla](https://habla.news/) and [yakihonne](https://yakihonne.com/) - Long-form posts on nostr similar to Medium.
-- [Highlighter](https://highlighter.com/) - Client focused on reading and highlighting long-form content.
-- [Shipyard](https://shipyard.pub/) - Write, schedule, and boost your notes.
-- [Wavlake](https://www.wavlake.com/) - A music platform similar to Spotify.
-- [Satellite.earth](https://satellite.earth/) - Focuses on reddit-like reading experience but also offers CDN media hosting and other nostr services.
-- [Npub.pro](https://npub.pro/) - Nostr-based websites to show case creator content.
-- [Pidgeon](https://pidgeon.lol/) - Compose and schedule notes.
+{{< clients-group group="creator" >}}
 
 Desktop clients:
 
-- [Goop](https://goop.dergigi.com/) - Native NIP-17 direct-message client for macOS, Windows, and Linux
-- [Gossip](https://github.com/mikedilger/gossip) - Advanced, privacy-conscious Nostr desktop client with multi-relay support, secure key handling, and extensive moderation and customization options
-- [Notedeck](https://damus.io/notedeck/) - Lightning fast, native, multi-account Nostr client for desktop (by Damus team)
-- [more-speech](https://github.com/unclebob/more-speech) - Powerful Clojure-based Nostr client for desktop, focused on robust content moderation, curation, and advanced relay management
+{{< clients-group group="desktop" >}}
 
 ## Relays
 

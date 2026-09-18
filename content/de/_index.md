@@ -197,14 +197,7 @@ Liste von Clients führt, oder wirf einen Blick auf die [Client-Vergleichstabell
 
 Mobile Clients:
 
-- [Primal (Web, iOS & Android)](https://primal.net/downloads) - Sanfter Einstieg, eingebaute Wallet und gute Standard-Einstellungen für Neulinge
-- [Damus (iOS, Android & Web)](https://damus.io/) - Polierter plattformübergreifender Client, funktioniert auch auf MacOS[^fn-mac]
-- [Amethyst (Android)](https://www.amethyst.social/) - Funktionsreicher Android-Client mit großer Nutzerbasis
-- [Wisp (Android)](https://wisp.mobile/) - Schneller, minimalistischer Android-Client mit nativer Oberfläche
-- [Flotilla (Android)](https://play.google.com/store/apps/details?id=social.flotilla&hl=en_US) - DMs und Gruppenchats
-- [Nostur (iOS)](https://apps.apple.com/us/app/nostur/id1672780508) - nativer iOS/iPad-Client mit MacOS[^fn-mac]-Version
-- [Openvibe (iOS & Android)](https://play.google.com/store/apps/details?id=com.plebstr.client) - Nostr, Threads, Bluesky und Mastodon in einem Client
-- [Yakihonne (iOS & Android)](https://yakihonne.com/yakihonne-mobile-app) - Plattformübergreifender Nostr-Client
+{{< clients-group group="mobile" >}}
 
 Weitere native Clients sind in Entwicklung, darunter Nostros[^nostros] und Voyage[^voyage].
 
@@ -212,16 +205,7 @@ Weitere native Clients sind in Entwicklung, darunter Nostros[^nostros] und Voyag
 
 Web-Clients:
 
-- [primal.net](https://primal.net/) - Einer der einfachsten Web-Clients für den Einstieg, auch auf iOS und Android verfügbar
-- [phoenix.social](https://phoenix.social/) - Einfache Oberfläche mit automatischem Bild-Upload
-- [phoenix.deck](https://phoenix.social/deck) - Eine Tweetdeck-ähnliche Version des Snort-Clients
-- [noStrudel](https://nostrudel.ninja/) - Unterstützt viele NIPs inkl. Communities, Streams, Blogs und mehr
-- [coracle.social](https://coracle.social/) - Suche, Filter und Micro-Apps
-- [jumble](https://jumble.social/) - Entdecke Content-Feeds nach Relay und erstelle eigene Relay-Sets
-- [iris.to](https://iris.to/) - Saubere Oberfläche und reich an Funktionen
-- [x21](https://x21.social/) - Saubere Oberfläche
-- [nostria](https://nostria.app/) - Entdecke Relay-Feeds, Themen, Musik und mehr
-- [grimoire](https://grimoire.rocks/) - Ein nostr-Client für Magier
+{{< clients-group group="web" >}}
 
 Auf Android kannst du den [Kiwi Browser](https://kiwibrowser.com/) verwenden, um die
 [Alby](https://getalby.com)- oder [nos2x](https://github.com/fiatjaf/nos2x)-Erweiterung
@@ -238,21 +222,11 @@ Es gibt auch [Nostr Console](https://github.com/vishalxl/nostr_console),
 
 Web-Clients für Content-Ersteller:
 
-- [ZapStream](https://zap.stream/) - Streaming auf nostr ermöglicht sofortige Monetarisierung von Inhalten.
-- [Habla](https://habla.news/) und [yakihonne](https://yakihonne.com/) - Langform-Beiträge auf nostr, ähnlich wie Medium.
-- [Highlighter](https://highlighter.com/) - Client zum Lesen und Hervorheben von Langform-Inhalten.
-- [Shipyard](https://shipyard.pub/) - Schreibe, plane und booste deine Notes.
-- [Wavlake](https://www.wavlake.com/) - Eine Musikplattform ähnlich wie Spotify.
-- [Satellite.earth](https://satellite.earth/) - Fokus auf Reddit-ähnliche Leseerfahrung, bietet auch CDN-Medienhosting und andere nostr-Dienste.
-- [Npub.pro](https://npub.pro/) - Nostr-basierte Websites zur Präsentation von Creator-Inhalten.
-- [Pidgeon](https://pidgeon.lol/) - Verfasse und plane Notes.
+{{< clients-group group="creator" >}}
 
 Desktop-Clients:
 
-- [Goop](https://goop.dergigi.com/) - Nativer NIP-17-Direktnachrichten-Client für macOS, Windows und Linux
-- [Gossip](https://github.com/mikedilger/gossip) - Fortschrittlicher, datenschutzbewusster Nostr-Desktop-Client mit Multi-Relay-Unterstützung, sicherer Schlüsselverwaltung und umfangreichen Moderations- und Anpassungsoptionen
-- [Notedeck](https://damus.io/notedeck/) - Blitzschneller, nativer Multi-Account-Nostr-Client für Desktop (vom Damus-Team)
-- [more-speech](https://github.com/unclebob/more-speech) - Leistungsfähiger Clojure-basierter Nostr-Client für Desktop, fokussiert auf robuste Inhaltsmoderation, Kuratierung und erweiterte Relay-Verwaltung
+{{< clients-group group="desktop" >}}
 
 ## Relays
 

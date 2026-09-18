@@ -1,8 +1,13 @@
 nav_download: Herunterladen
+nav_clients: Clients
 nav_learn: Lernen
 nav_tips: Tipps
 nav_faq: FAQ
 toc_title: Inhaltsverzeichnis
+clients_directory: Client-Verzeichnis
+clients_platforms: Plattformen
+clients_use_cases: Anwendungsfälle
+clients_nips: NIPs
 footer_license: >-
   Sofern nicht anders angegeben, sind die Inhalte dieser Seite unter einer
   Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) Lizenz lizenziert.

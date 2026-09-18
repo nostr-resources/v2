@@ -1,0 +1,12 @@
+{{- $group := .Get "group" -}}
+{{- $lang := .Page.Lang -}}
+{{- $clients := where site.Data.clients.clients "group" $group -}}
+<ul class="resource-list">
+  {{- range $clients }}
+  {{- $description := index .description $lang | default (index .description "en") -}}
+  <li>
+    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}</a>
+    {{ with $description }} - {{ . | markdownify }}{{ end }}
+  </li>
+  {{- end }}
+</ul>

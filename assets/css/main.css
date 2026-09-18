@@ -133,6 +133,60 @@
   border-radius: 6px;
 }
 
+/* Structured resource listings */
+.resource-list {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
+.resource-list li {
+  margin-bottom: 0.65em;
+}
+
+.resource-directory {
+  margin-top: 2em;
+}
+
+.resource-group {
+  margin-top: 2.5em;
+}
+
+.resource-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.resource-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.resource-card h3 {
+  margin-top: 0;
+}
+
+.resource-card dl {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+}
+
+.resource-card dl div {
+  margin-top: 0.65rem;
+}
+
+.resource-card dt {
+  color: #aaa;
+  font-weight: 700;
+}
+
+.resource-card dd {
+  margin: 0.15rem 0 0;
+}
+
 /* Footnotes */
 .prose .footnotes {
   margin-top: 3em;
