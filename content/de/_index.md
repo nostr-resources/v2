@@ -249,6 +249,7 @@ Web-Clients für Content-Ersteller:
 
 Desktop-Clients:
 
+- [Goop](https://goop.dergigi.com/) - Nativer NIP-17-Direktnachrichten-Client für macOS, Windows und Linux
 - [Gossip](https://github.com/mikedilger/gossip) - Fortschrittlicher, datenschutzbewusster Nostr-Desktop-Client mit Multi-Relay-Unterstützung, sicherer Schlüsselverwaltung und umfangreichen Moderations- und Anpassungsoptionen
 - [Notedeck](https://damus.io/notedeck/) - Blitzschneller, nativer Multi-Account-Nostr-Client für Desktop (vom Damus-Team)
 - [more-speech](https://github.com/unclebob/more-speech) - Leistungsfähiger Clojure-basierter Nostr-Client für Desktop, fokussiert auf robuste Inhaltsmoderation, Kuratierung und erweiterte Relay-Verwaltung
