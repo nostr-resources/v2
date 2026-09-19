@@ -27,6 +27,28 @@ Content lives in `content/<lang>/`. UI strings live in `i18n/<lang>.yaml`.
 
 Currently supported: English (`en`), German (`de`).
 
+## Resource Data
+
+Resource directories live in `data/*.yaml` and render through Hugo shortcodes.
+Use data files for repeated lists, and use Markdown pages for explanation and
+routing.
+
+- `data/clients.yaml` powers the homepage client lists and `/clients/`
+- `data/relays.yaml` powers the relay lists and `/relays/`
+- `data/tools.yaml` powers tool, media, zap, search, feed, bot, and builder lists
+- `data/learn.yaml` powers books, podcasts, episodes, articles, videos, and translations
+
+Each resource item needs a `name`, `group`, localized `description.en` and
+`description.de`, and usually a `url`. Optional metadata includes `platforms`,
+`recommended_for`, `tags`, and `nips`. Names can be either a string or a
+localized map with `en` and `de`.
+
+Run validation before pushing:
+
+```bash
+make validate
+```
+
 ### Adding a translation
 
 1. Copy `content/en/_index.md` to `content/<lang>/_index.md`
