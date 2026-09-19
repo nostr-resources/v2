@@ -407,30 +407,15 @@ You can also create an RSS feed on nostr by following [this guide](https://habla
 
 ## Books
 
-- [Building Nostr](https://building-nostr.coracle.social/) by hodlbod - A guide for developers building on the decentralized social protocol
+{{< resource-group data="learn" group="books" >}}
 
 ## Podcasts
 
-- [Nostr Compass](https://podcast.nostrcompass.org/) - weekly interviews with nostr developers
-- [nostrovia](https://nostrovia.org/) - nostr news roundup
-- [La Cosa Nostr](https://tunein.com/podcasts/Technology-Podcasts/La-Cosa-Nostr---The-Decentralized-Network-p3709902/?topicId=355452728) - interviews with relay operators and builders
-- [Nostr Talks](https://www.curiousdk.com/podcast) - Nostr related news and interviews
-- [Thank God For Nostr](https://podcasts.apple.com/us/podcast/thank-god-for-nostr/id1694064646) - nostr from a Christian perspective
-- [No Solutions](https://fountain.fm/show/1jdehAGo1tgBdKZXIo8K) - No solutions; only trade-offs. Walking towards a better internet.
-- [Nostr Rising](https://bitcoin.review/nostr/) - a [Bitcoin.Review](https://bitcoin.review/) series
-- [Bitcoin And...](https://fountain.fm/show/eK5XaSb3UaLRavU3lYrI) - It's the news you can use
-- [Plebchain Radio](https://fountain.fm/show/0N6GGdZuYNNG7ysagCg9) - weekly live audio show made for plebs, by plebs
+{{< resource-group data="learn" group="podcasts" >}}
 
 Episodes:
 
-- [BR018](https://bitcoin.review/podcast/episode-18/) - jack, fiatjaf, and jb55 talk nostr with nvk ([transcript](https://archive.is/wip/Qoh4M), [archive](https://archive.is/wip/dkQj2))
-- [Lightning Tidbits 769571](https://pod.link/1586346643/episode/33f509c2a1990640334b48739c59e31f) - fiatjaf talks nostr with André Neves
-- [CD63 - building nostr](https://pod.link/1546393840/episode/112bd2a52d54e203ec0c11022b5aaf11), a censorship resistant alternative to twitter, with fiatjaf, jb55, and kukks, hosted by ODELL ([transcript](https://archive.is/wip/Qoh4M), [archive](https://archive.ph/Qoh4M))
-- [BA691 - A Native Protocol for Social Media](https://pod.link/1359544516/episode/8e647d338c79265bed63dfb06dd71e7b) by jack
-- [BTC111 - Decentralized Social Media & Bitcoin](https://www.theinvestorspodcast.com/bitcoin-fundamentals/nostr-decentralized-social-media-william-casarin/) with jb55 hosted by Preston Pysh ([transcript](https://chowcollection.medium.com/preston-pysh-btc111-nostr-decentralized-social-media-bitcoin-w-william-casarin-352f6dedce46), [archive](https://archive.ph/uCSDQ))
-- [What's new with Stacker.News and Nostr?](https://www.curiousdk.com/p/whats-new-with-stackernews-and-nostr) a conversation with Keyan Kousha and Max Webster ([transcript](https://chowcollection.medium.com/david-king-whats-new-with-stacker-news-e49e3256eddc), [archive](https://archive.is/wip/wGrb8))
-- [BAChat-83 - Decentralizing Global Markets with Nostr](https://play.pocketcasts.com/podcasts/d44c81b0-10eb-0136-c266-7d73a919276a/7f0a34a8-e0b3-4c13-8538-a9a863c644ce), with PABLOF7z ([archive](https://archive.is/C3xHd))
-- [The pro-hashed podcast, episode 22](https://youtu.be/wiDNJPKWRmQ), a conversation between Constant and fiatjaf
+{{< resource-group data="learn" group="episodes" >}}
 
 ---
 
@@ -460,30 +445,15 @@ For truly secure and private messaging, check out [White Noise](https://www.whit
 
 ## More info
 
-- [nostr.how](https://nostr.how/) by Jeff G.
-- [usenostr.org](https://usenostr.org/) by Pluja
-- [nostr.net](https://www.nostr.net/) aka awesome-nostr by Aljaz
-- [nostr-protocol/nostr](https://github.com/nostr-protocol/nostr) by fiatjaf
-- [nostr.org](https://nostr.org/) by elidy
-- [whynostr.com](https://www.whynostr.com/) by zach
+{{< resource-group data="learn" group="guides" >}}
 
 Articles and explainers:
 
-- [Can Nostr Make Twitter's Dreams Come True?](https://reason.com/2024/08/13/can-nostr-make-twitters-dreams-come-true/) by Alex Gladstein
-- [The Power of Nostr: Decentralized Social Media and More](https://www.lynalden.com/the-power-of-nostr/) by Lyn Alden
-- [Implications of Open Monetary and Information Networks](https://www.lynalden.com/open-networks/) by Lyn Alden
-- [What Is Nostr and How Do I Use It?](https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it) by Walker V.
-- [What is Nostr, and how to start using Nostr](https://github.com/vishalxl/nostr_console/discussions/31) by Vishal
-- [Nostr, an Introduction](https://wiki.wellorder.net/post/nostr-intro/) by Greg Heartsfield
-- [Nostr Newcomers Most Common Questions and Answers](https://uselessshit.co/resources/nostr/) by pitiunited
-- [Why Nostr Matters](https://blog.lopp.net/why-nostr-matters/) by Jameson Lopp
+{{< resource-group data="learn" group="articles" >}}
 
 Videos:
 
-- [How To Use NOSTR](https://youtu.be/qn-Zp491t4Y) by BTC Sessions
-- [Social Media is broken. Can we fix it?](https://youtu.be/aA-jiiepOrE) by Max DeMarco
-- [Nostr - FOSDEM 2025](https://youtu.be/Tbt3jL1Ms0w) by Wouter Constant
-- [Nostr: the decentralized future of social media?](https://www.youtube.com/live/pi2JbHWd_BM?si=u6NcQk86B3zSAQXe) by ReasonTV with Will Casarin
+{{< resource-group data="learn" group="videos" >}}
 
 For conference videos have a look at the [nostr world](https://www.youtube.com/@nostrworld) channel.
 
@@ -512,12 +482,7 @@ This site is open source too. If you can, please [improve this page](https://git
 
 ## Translations
 
-- [Chinese translation](https://mp.weixin.qq.com/s/RoO-oOgGAXpcGyjD8IYBdw) by Cakksakkas
-- [French translation](https://nostr.fr) by Marco.BTC.fr
-- [Spanish translation](https://bitcoinnostr.com/recursos-de-nostr/) by BitByBit
-- [German translation](https://cercatrova.blog/nostr-info-de/) by cercatrova
-- [Italian translation](https://gist.github.com/theRescuer/717295270a35b4641081b6ef2cdf3025) by avallanosterza
-- [Brazilian Portuguese translation](https://gist.github.com/fernandoporazzi/d1c47b4f2a1d2c1a2e0654a2a31668ff) por fernandoporazzi
+{{< resource-group data="learn" group="translations" >}}
 
 Please [create a PR](https://github.com/nostr-resources/v2/pulls) to add your translation to the list above.
 

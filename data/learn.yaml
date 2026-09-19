@@ -1,0 +1,387 @@
+group_order:
+  - guides
+  - books
+  - podcasts
+  - episodes
+  - articles
+  - videos
+  - translations
+
+groups:
+  guides:
+    title:
+      en: Guides and references
+      de: Guides und Referenzen
+  books:
+    title:
+      en: Books
+      de: Bucher
+  podcasts:
+    title:
+      en: Podcasts
+      de: Podcasts
+  episodes:
+    title:
+      en: Episodes
+      de: Episoden
+  articles:
+    title:
+      en: Articles and explainers
+      de: Artikel und Erklarungen
+  videos:
+    title:
+      en: Videos
+      de: Videos
+  translations:
+    title:
+      en: Translations
+      de: Ubersetzungen
+
+items:
+  - name: nostr.how
+    url: https://nostr.how/
+    group: guides
+    tags: [guide, onboarding]
+    description:
+      en: Nostr guide by Jeff G.
+      de: Nostr-Guide von Jeff G.
+
+  - name: usenostr.org
+    url: https://usenostr.org/
+    group: guides
+    tags: [guide, onboarding]
+    description:
+      en: Nostr guide by Pluja
+      de: Nostr-Guide von Pluja
+
+  - name: nostr.net
+    url: https://www.nostr.net/
+    group: guides
+    tags: [awesome-list, resources]
+    description:
+      en: awesome-nostr by Aljaz
+      de: awesome-nostr von Aljaz
+
+  - name: nostr-protocol/nostr
+    url: https://github.com/nostr-protocol/nostr
+    group: guides
+    tags: [protocol, reference]
+    description:
+      en: Protocol overview by fiatjaf
+      de: Protokoll-Ubersicht von fiatjaf
+
+  - name: nostr.org
+    url: https://nostr.org/
+    group: guides
+    tags: [guide, onboarding]
+    description:
+      en: Nostr overview by elidy
+      de: Nostr-Ubersicht von elidy
+
+  - name: whynostr.com
+    url: https://www.whynostr.com/
+    group: guides
+    tags: [explainer]
+    description:
+      en: Why Nostr matters by zach
+      de: Warum Nostr wichtig ist, von zach
+
+  - name: Building Nostr
+    url: https://building-nostr.coracle.social/
+    group: books
+    tags: [builders, book]
+    description:
+      en: Guide for developers building on the decentralized social protocol
+      de: Leitfaden fur Entwickler, die auf dem dezentralen sozialen Protokoll bauen
+
+  - name: Nostr Compass
+    url: https://podcast.nostrcompass.org/
+    group: podcasts
+    tags: [interviews, developers]
+    description:
+      en: Weekly interviews with Nostr developers
+      de: Wochentliche Interviews mit Nostr-Entwicklern
+
+  - name: nostrovia
+    url: https://nostrovia.org/
+    group: podcasts
+    tags: [news]
+    description:
+      en: Nostr news roundup
+      de: Nostr-Nachrichtenuberblick
+
+  - name: La Cosa Nostr
+    url: https://tunein.com/podcasts/Technology-Podcasts/La-Cosa-Nostr---The-Decentralized-Network-p3709902/?topicId=355452728
+    group: podcasts
+    tags: [interviews, relays]
+    description:
+      en: Interviews with relay operators and builders
+      de: Interviews mit Relay-Betreibern und Buildern
+
+  - name: Nostr Talks
+    url: https://www.curiousdk.com/podcast
+    group: podcasts
+    tags: [news, interviews]
+    description:
+      en: Nostr-related news and interviews
+      de: Nostr-bezogene Nachrichten und Interviews
+
+  - name: Thank God For Nostr
+    url: https://podcasts.apple.com/us/podcast/thank-god-for-nostr/id1694064646
+    group: podcasts
+    tags: [interviews]
+    description:
+      en: Nostr from a Christian perspective
+      de: Nostr aus christlicher Perspektive
+
+  - name: No Solutions
+    url: https://fountain.fm/show/1jdehAGo1tgBdKZXIo8K
+    group: podcasts
+    tags: [internet, tradeoffs]
+    description:
+      en: No solutions; only trade-offs
+      de: Keine Losungen; nur Trade-offs
+
+  - name: Nostr Rising
+    url: https://bitcoin.review/nostr/
+    group: podcasts
+    tags: [bitcoin, news]
+    description:
+      en: Bitcoin Review series about Nostr
+      de: Bitcoin-Review-Serie uber Nostr
+
+  - name: Bitcoin And...
+    url: https://fountain.fm/show/eK5XaSb3UaLRavU3lYrI
+    group: podcasts
+    tags: [news]
+    description:
+      en: The news you can use
+      de: Nachrichten zum Gebrauch
+
+  - name: Plebchain Radio
+    url: https://fountain.fm/show/0N6GGdZuYNNG7ysagCg9
+    group: podcasts
+    tags: [live-audio]
+    description:
+      en: Weekly live audio show made for plebs, by plebs
+      de: Wochentliche Live-Audioshow von Plebs, fur Plebs
+
+  - name: BR018
+    url: https://bitcoin.review/podcast/episode-18/
+    group: episodes
+    tags: [interview, bitcoin-review]
+    description:
+      en: jack, fiatjaf, and jb55 talk Nostr with nvk
+      de: jack, fiatjaf und jb55 sprechen mit nvk uber Nostr
+
+  - name: Lightning Tidbits 769571
+    url: https://pod.link/1586346643/episode/33f509c2a1990640334b48739c59e31f
+    group: episodes
+    tags: [interview]
+    description:
+      en: fiatjaf talks Nostr with Andre Neves
+      de: fiatjaf spricht mit Andre Neves uber Nostr
+
+  - name: CD63 - building nostr
+    url: https://pod.link/1546393840/episode/112bd2a52d54e203ec0c11022b5aaf11
+    group: episodes
+    tags: [interview]
+    description:
+      en: fiatjaf, jb55, and kukks talk with ODELL
+      de: fiatjaf, jb55 und kukks sprechen mit ODELL
+
+  - name: BA691 - A Native Protocol for Social Media
+    url: https://pod.link/1359544516/episode/8e647d338c79265bed63dfb06dd71e7b
+    group: episodes
+    tags: [interview]
+    description:
+      en: Episode by jack
+      de: Episode von jack
+
+  - name: BTC111 - Decentralized Social Media and Bitcoin
+    url: https://www.theinvestorspodcast.com/bitcoin-fundamentals/nostr-decentralized-social-media-william-casarin/
+    group: episodes
+    tags: [interview]
+    description:
+      en: William Casarin with Preston Pysh
+      de: William Casarin bei Preston Pysh
+
+  - name: What's new with Stacker.News and Nostr?
+    url: https://www.curiousdk.com/p/whats-new-with-stackernews-and-nostr
+    group: episodes
+    tags: [interview]
+    description:
+      en: Conversation with Keyan Kousha and Max Webster
+      de: Gesprach mit Keyan Kousha und Max Webster
+
+  - name: BAChat-83 - Decentralizing Global Markets with Nostr
+    url: https://play.pocketcasts.com/podcasts/d44c81b0-10eb-0136-c266-7d73a919276a/7f0a34a8-e0b3-4c13-8538-a9a863c644ce
+    group: episodes
+    tags: [interview]
+    description:
+      en: Conversation with PABLOF7z
+      de: Gesprach mit PABLOF7z
+
+  - name: The pro-hashed podcast, episode 22
+    url: https://youtu.be/wiDNJPKWRmQ
+    group: episodes
+    tags: [interview]
+    description:
+      en: Conversation between Constant and fiatjaf
+      de: Gesprach zwischen Constant und fiatjaf
+
+  - name: Can Nostr Make Twitter's Dreams Come True?
+    url: https://reason.com/2024/08/13/can-nostr-make-twitters-dreams-come-true/
+    group: articles
+    tags: [explainer]
+    description:
+      en: Article by Alex Gladstein
+      de: Artikel von Alex Gladstein
+
+  - name: The Power of Nostr
+    url: https://www.lynalden.com/the-power-of-nostr/
+    group: articles
+    tags: [explainer]
+    description:
+      en: Decentralized Social Media and More, by Lyn Alden
+      de: Decentralized Social Media and More, von Lyn Alden
+
+  - name: Implications of Open Monetary and Information Networks
+    url: https://www.lynalden.com/open-networks/
+    group: articles
+    tags: [bitcoin, networks]
+    description:
+      en: Article by Lyn Alden
+      de: Artikel von Lyn Alden
+
+  - name: What Is Nostr and How Do I Use It?
+    url: https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it
+    group: articles
+    tags: [guide]
+    description:
+      en: Article by Walker V.
+      de: Artikel von Walker V.
+
+  - name: What is Nostr, and how to start using Nostr
+    url: https://github.com/vishalxl/nostr_console/discussions/31
+    group: articles
+    tags: [guide]
+    description:
+      en: Guide by Vishal
+      de: Guide von Vishal
+
+  - name: Nostr, an Introduction
+    url: https://wiki.wellorder.net/post/nostr-intro/
+    group: articles
+    tags: [introduction]
+    description:
+      en: Introduction by Greg Heartsfield
+      de: Einfuhrung von Greg Heartsfield
+
+  - name: Nostr Newcomers Most Common Questions and Answers
+    url: https://uselessshit.co/resources/nostr/
+    group: articles
+    tags: [faq, newcomers]
+    description:
+      en: FAQ by pitiunited
+      de: FAQ von pitiunited
+
+  - name: Why Nostr Matters
+    url: https://blog.lopp.net/why-nostr-matters/
+    group: articles
+    tags: [explainer]
+    description:
+      en: Article by Jameson Lopp
+      de: Artikel von Jameson Lopp
+
+  - name: How To Use NOSTR
+    url: https://youtu.be/qn-Zp491t4Y
+    group: videos
+    tags: [guide]
+    description:
+      en: Video by BTC Sessions
+      de: Video von BTC Sessions
+
+  - name: Social Media is broken. Can we fix it?
+    url: https://youtu.be/aA-jiiepOrE
+    group: videos
+    tags: [explainer]
+    description:
+      en: Video by Max DeMarco
+      de: Video von Max DeMarco
+
+  - name: Nostr - FOSDEM 2025
+    url: https://youtu.be/Tbt3jL1Ms0w
+    group: videos
+    tags: [talk]
+    description:
+      en: Talk by Wouter Constant
+      de: Vortrag von Wouter Constant
+
+  - name: Nostr, the decentralized future of social media?
+    url: https://www.youtube.com/live/pi2JbHWd_BM?si=u6NcQk86B3zSAQXe
+    group: videos
+    tags: [interview, explainer]
+    description:
+      en: ReasonTV with Will Casarin
+      de: ReasonTV mit Will Casarin
+
+  - name:
+      en: Chinese translation
+      de: Chinesische Ubersetzung
+    url: https://mp.weixin.qq.com/s/RoO-oOgGAXpcGyjD8IYBdw
+    group: translations
+    tags: [translation, chinese]
+    description:
+      en: Translation by Cakksakkas
+      de: Ubersetzung von Cakksakkas
+
+  - name:
+      en: French translation
+      de: Franzosische Ubersetzung
+    url: https://nostr.fr
+    group: translations
+    tags: [translation, french]
+    description:
+      en: Translation by Marco.BTC.fr
+      de: Ubersetzung von Marco.BTC.fr
+
+  - name:
+      en: Spanish translation
+      de: Spanische Ubersetzung
+    url: https://bitcoinnostr.com/recursos-de-nostr/
+    group: translations
+    tags: [translation, spanish]
+    description:
+      en: Translation by BitByBit
+      de: Ubersetzung von BitByBit
+
+  - name:
+      en: German translation
+      de: Deutsche Ubersetzung
+    url: https://cercatrova.blog/nostr-info-de/
+    group: translations
+    tags: [translation, german]
+    description:
+      en: Translation by cercatrova
+      de: Ubersetzung von cercatrova
+
+  - name:
+      en: Italian translation
+      de: Italienische Ubersetzung
+    url: https://gist.github.com/theRescuer/717295270a35b4641081b6ef2cdf3025
+    group: translations
+    tags: [translation, italian]
+    description:
+      en: Translation by avallanosterza
+      de: Ubersetzung von avallanosterza
+
+  - name:
+      en: Brazilian Portuguese translation
+      de: Brasilianisch-portugiesische Ubersetzung
+    url: https://gist.github.com/fernandoporazzi/d1c47b4f2a1d2c1a2e0654a2a31668ff
+    group: translations
+    tags: [translation, portuguese]
+    description:
+      en: Translation by fernandoporazzi
+      de: Ubersetzung von fernandoporazzi

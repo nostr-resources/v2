@@ -13,12 +13,14 @@
     <div class="resource-card-grid">
       {{- range $items }}
       {{- $description := index .description $lang | default (index .description "en") -}}
+      {{- $name := .name -}}
+      {{- if reflect.IsMap $name }}{{ $name = index $name $lang | default (index $name "en") }}{{ end -}}
       <article class="resource-card">
         <h3>
           {{- if .url -}}
-          <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+          <a href="{{ .url }}" target="_blank" rel="noopener">{{ $name }}</a>
           {{- else -}}
-          {{ .name }}
+          {{ $name }}
           {{- end -}}
         </h3>
         {{ with $description }}<p>{{ . | markdownify }}</p>{{ end }}
@@ -48,4 +50,3 @@
   </section>
   {{- end }}
 </section>
-

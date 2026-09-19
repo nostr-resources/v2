@@ -6,6 +6,7 @@ require "yaml"
 
 DATASETS = [
   ["data/clients.yaml", "clients"],
+  ["data/learn.yaml", "items"],
   ["data/relays.yaml", "items"],
   ["data/tools.yaml", "items"]
 ].freeze
@@ -28,6 +29,16 @@ end
 def require_string(value, label)
   fail_with("#{label} must be a non-empty string") unless value.is_a?(String) && !value.strip.empty?
   value
+end
+
+def require_localized_string(value, label)
+  if value.is_a?(String)
+    require_string(value, label)
+  else
+    value = require_hash(value, label)
+    require_string(value["en"], "#{label}.en")
+    require_string(value["de"], "#{label}.de")
+  end
 end
 
 def validate_url(value, label)
@@ -71,7 +82,7 @@ DATASETS.each do |path, collection_key|
   items.each_with_index do |item, index|
     label = "#{path}: #{collection_key}[#{index}]"
     item = require_hash(item, label)
-    require_string(item["name"], "#{label}.name")
+    require_localized_string(item["name"], "#{label}.name")
     group = require_string(item["group"], "#{label}.group")
     fail_with("#{label}.group references unknown group #{group}") unless groups.key?(group)
     validate_url(item["url"], "#{label}.url")
@@ -87,4 +98,3 @@ DATASETS.each do |path, collection_key|
 end
 
 puts "resource data ok"
-

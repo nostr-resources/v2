@@ -9,14 +9,15 @@
 <ul class="resource-list">
   {{- range $items }}
   {{- $description := index .description $lang | default (index .description "en") -}}
+  {{- $name := .name -}}
+  {{- if reflect.IsMap $name }}{{ $name = index $name $lang | default (index $name "en") }}{{ end -}}
   <li>
     {{- if .url -}}
-    <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}</a>
+    <a href="{{ .url }}" target="_blank" rel="noopener">{{ $name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}</a>
     {{- else -}}
-    {{ .name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}
+    {{ $name }}{{ with .platforms }} ({{ delimit . ", " }}){{ end }}
     {{- end -}}
     {{ with $description }} - {{ . | markdownify }}{{ end }}
   </li>
   {{- end }}
 </ul>
-

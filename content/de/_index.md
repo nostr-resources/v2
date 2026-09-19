@@ -398,19 +398,15 @@ Du kannst auch einen RSS-Feed auf nostr erstellen, indem du [dieser Anleitung](h
 
 ## Bücher
 
-- [Building Nostr](https://building-nostr.coracle.social/) von hodlbod - Ein Leitfaden für Entwickler, die auf dem dezentralen sozialen Protokoll bauen
+{{< resource-group data="learn" group="books" >}}
 
 ## Podcasts
 
-- [Nostr Compass](https://podcast.nostrcompass.org/) - wöchentliche Interviews mit nostr-Entwicklern
-- [nostrovia](https://nostrovia.org/) - nostr-Nachrichtenüberblick
-- [La Cosa Nostr](https://tunein.com/podcasts/Technology-Podcasts/La-Cosa-Nostr---The-Decentralized-Network-p3709902/?topicId=355452728) - Interviews mit Relay-Betreibern und Buildern
-- [Nostr Talks](https://www.curiousdk.com/podcast) - Nostr-bezogene Nachrichten und Interviews
-- [Thank God For Nostr](https://podcasts.apple.com/us/podcast/thank-god-for-nostr/id1694064646) - nostr aus christlicher Perspektive
-- [No Solutions](https://fountain.fm/show/1jdehAGo1tgBdKZXIo8K) - Keine Lösungen; nur Trade-offs. Auf dem Weg zu einem besseren Internet.
-- [Nostr Rising](https://bitcoin.review/nostr/) - eine [Bitcoin.Review](https://bitcoin.review/)-Serie
-- [Bitcoin And...](https://fountain.fm/show/eK5XaSb3UaLRavU3lYrI) - Nachrichten zum Gebrauch
-- [Plebchain Radio](https://fountain.fm/show/0N6GGdZuYNNG7ysagCg9) - wöchentliche Live-Audioshow von Plebs, für Plebs
+{{< resource-group data="learn" group="podcasts" >}}
+
+Episoden:
+
+{{< resource-group data="learn" group="episodes" >}}
 
 ---
 
@@ -439,30 +435,15 @@ Für wirklich sichere und private Nachrichtenübermittlung schau dir [White Nois
 
 ## Weitere Infos
 
-- [nostr.how](https://nostr.how/) von Jeff G.
-- [usenostr.org](https://usenostr.org/) von Pluja
-- [nostr.net](https://www.nostr.net/) alias awesome-nostr von Aljaz
-- [nostr-protocol/nostr](https://github.com/nostr-protocol/nostr) von fiatjaf
-- [nostr.org](https://nostr.org/) von elidy
-- [whynostr.com](https://www.whynostr.com/) von zach
+{{< resource-group data="learn" group="guides" >}}
 
 Artikel und Erklärungen:
 
-- [Can Nostr Make Twitter's Dreams Come True?](https://reason.com/2024/08/13/can-nostr-make-twitters-dreams-come-true/) von Alex Gladstein
-- [The Power of Nostr: Decentralized Social Media and More](https://www.lynalden.com/the-power-of-nostr/) von Lyn Alden
-- [Implications of Open Monetary and Information Networks](https://www.lynalden.com/open-networks/) von Lyn Alden
-- [What Is Nostr and How Do I Use It?](https://www.btctimes.com/news/what-is-nostr-and-how-do-i-use-it) von Walker V.
-- [What is Nostr, and how to start using Nostr](https://github.com/vishalxl/nostr_console/discussions/31) von Vishal
-- [Nostr, an Introduction](https://wiki.wellorder.net/post/nostr-intro/) von Greg Heartsfield
-- [Nostr Newcomers Most Common Questions and Answers](https://uselessshit.co/resources/nostr/) von pitiunited
-- [Why Nostr Matters](https://blog.lopp.net/why-nostr-matters/) von Jameson Lopp
+{{< resource-group data="learn" group="articles" >}}
 
 Videos:
 
-- [How To Use NOSTR](https://youtu.be/qn-Zp491t4Y) von BTC Sessions
-- [Social Media is broken. Can we fix it?](https://youtu.be/aA-jiiepOrE) von Max DeMarco
-- [Nostr - FOSDEM 2025](https://youtu.be/Tbt3jL1Ms0w) von Wouter Constant
-- [Nostr: the decentralized future of social media?](https://www.youtube.com/live/pi2JbHWd_BM?si=u6NcQk86B3zSAQXe) von ReasonTV mit Will Casarin
+{{< resource-group data="learn" group="videos" >}}
 
 Für Konferenzvideos schau dir den [nostr world](https://www.youtube.com/@nostrworld) Kanal an.
 
@@ -491,12 +472,7 @@ Diese Seite ist ebenfalls Open Source. Wenn du kannst, [verbessere diese Seite](
 
 ## Übersetzungen
 
-- [Chinesische Übersetzung](https://mp.weixin.qq.com/s/RoO-oOgGAXpcGyjD8IYBdw) von Cakksakkas
-- [Französische Übersetzung](https://nostr.fr) von Marco.BTC.fr
-- [Spanische Übersetzung](https://bitcoinnostr.com/recursos-de-nostr/) von BitByBit
-- [Deutsche Übersetzung](https://cercatrova.blog/nostr-info-de/) von cercatrova
-- [Italienische Übersetzung](https://gist.github.com/theRescuer/717295270a35b4641081b6ef2cdf3025) von avallanosterza
-- [Brasilianisch-portugiesische Übersetzung](https://gist.github.com/fernandoporazzi/d1c47b4f2a1d2c1a2e0654a2a31668ff) von fernandoporazzi
+{{< resource-group data="learn" group="translations" >}}
 
 Bitte [erstelle einen PR](https://github.com/nostr-resources/v2/pulls), um deine Übersetzung zur obigen Liste hinzuzufügen.
 
