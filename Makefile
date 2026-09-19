@@ -1,7 +1,10 @@
-.PHONY: build css serve clean
+.PHONY: build validate css serve clean
 
-build: css
+build: validate css
 	hugo
+
+validate:
+	ruby scripts/validate-data.rb
 
 css:
 	tailwindcss -i assets/css/main.css -o static/css/style.css --minify

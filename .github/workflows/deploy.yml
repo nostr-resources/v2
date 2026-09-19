@@ -38,6 +38,9 @@ jobs:
           curl -sL https://github.com/tailwindlabs/tailwindcss/releases/download/v4.1.7/tailwindcss-linux-x64 -o /usr/local/bin/tailwindcss
           chmod +x /usr/local/bin/tailwindcss
 
+      - name: Validate resource data
+        run: ruby scripts/validate-data.rb
+
       - name: Build CSS
         run: tailwindcss -i assets/css/main.css -o static/css/style.css --minify
 
